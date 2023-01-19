@@ -83,6 +83,10 @@
   font-size: var(--fs-desc);
   font-weight: 600;
 }
+.menu {
+  font-size: 4.8rem;
+  display: none;
+}
 .ul {
   transition: var(--transition);
 }
