@@ -1,0 +1,13 @@
+@media screen and (max-width: 768px) {
+  .slide-content {
+    margin: 0 10px;
+  }
+  .swiper-navBtn {
+    display: none;
+  }
+}
+@media screen and (max-width:81em) {
+  html{
+    font-size: 55%;
+  }
+}
