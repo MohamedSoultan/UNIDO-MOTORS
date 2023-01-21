@@ -1,3 +1,4 @@
+/* Golbal Role */
 * {
   padding: 0;
   margin: 0;
@@ -9,6 +10,7 @@
   --main-color: #01bcff;
   --fs-desc: 1.8rem;
   --transition: all 0.3s;
+  --box-shadow: 0 0 15px 0px rgb(0, 0, 0, 0.2);
 }
 li,
 a:any-link {
@@ -31,13 +33,14 @@ ul,
 .overlay {
   position: absolute;
 }
+/* Golbal Role */
 
 .hero-text {
   left: 10%;
   top: 50%;
   transform: translateY(-50%);
 }
-
+/* Start primary button */
 .primary-btn {
   font-size: 2.4rem;
   padding: 1rem 3.2rem;
@@ -46,6 +49,7 @@ ul,
   color: #fff;
   margin-top: 5rem;
   transition: var(--transition);
+  text-transform: uppercase;
 }
 .primary-btn:hover {
   transform: scale(1.2);
@@ -53,7 +57,9 @@ ul,
   color: var(--main-color);
   box-shadow: inset 0 0 0 2px var(--main-color);
 }
+/* End primary button */
 
+/* Start secondary button */
 .secondary-btn {
   display: flex;
   align-items: center;
@@ -62,10 +68,12 @@ ul,
   background: none;
   position: relative;
   padding: 2rem 0;
-  color: #000 ;
+  color: #000;
   transition: var(--transition);
+  text-transform: uppercase;
 }
-.news-events .secondary-btn a,.news-events .secondary-btn a  {
+.news-events .secondary-btn a,
+.news-events .secondary-btn a {
   color: #fff !important;
 }
 .secondary-btn::after {
@@ -86,14 +94,28 @@ ul,
 .secondary-btn a {
   color: #000;
 }
-.secondary-btn:hover  a{
+.secondary-btn:hover a {
   color: var(--main-color);
-    
 }
 .secondary-btn:hover:after {
   width: 100%;
   background-color: var(--main-color);
 }
+/* Start secondary button */
+/* Start threed button */
+.threed-btn {
+  border: none;
+  background: none;
+  padding: 0.5rem 1rem;
+  background-color: var(--main-color);
+  color: #fff;
+  text-transform: uppercase;
+  padding: 1rem 2.4rem;
+  font-size: 1.6rem;
+}
+/* End threed button */
+
+/* Start primary heading */
 
 .primary-heading {
   font-size: 5.4rem;
@@ -104,9 +126,12 @@ ul,
   color: #000;
   font-weight: 900;
 }
+/* End primary heading */
 
-
+/* Start Primary Heading Sections */
 .primary-heading-sections {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/images/hero-img.jpg);
   height: 20vh;
   font-weight: 900;
   font-size: 5.4rem;
@@ -124,3 +149,15 @@ ul,
   left: 0;
   background-color: rgba(0, 0, 0, 0.5);
 }
+/* End Primary Heading Sections */
+
+/* Start starter-sections */
+.starter-sections {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.starter-sections p {
+  margin-bottom: 0;
+}
+/* End starter-sections */

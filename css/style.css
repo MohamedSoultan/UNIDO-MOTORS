@@ -330,7 +330,7 @@
   max-width: 100%;
   height: 500px;
   padding: 5rem;
-  box-shadow: 0 0 50px 1px rgb(0, 0, 0, 0.2);
+  box-shadow: var(--box-shadow);
 }
 
 /* Next & previous buttons */
@@ -378,7 +378,109 @@
 /* ///////////////////////////////////////////////////////////////////////////////  ALL SECTIONS BEGIN FROM HERE  ////////////////////////////////////////////////////////////////// */
 
 /* Products section */
-.primary-heading-sections {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(/images/hero-img.jpg);
+.products-section {
+  display: grid;
+  grid-template-columns: 40rem 1fr;
+}
+.products-section form input {
+  border-radius: 0;
+  font-family: inherit;
+  font-size: 1.2rem;
+  padding: 1rem 1.4rem;
+}
+.products-section form label {
+  font-size: 1.5rem;
+}
+.below-header .home {
+  font-size: var(--fs-desc);
+  color: #000;
+}
+.below-header .title-section {
+  font-size: var(--fs-desc);
+  font-weight: 900;
+  color: var(--main-color);
+}
+.home-icon,
+.arrow-icon {
+  font-size: var(--fs-desc);
+}
+/* End head sectoin */
+/* left  */
+.left {
+  margin-left: 9.6rem;
+}
+.accordion-item {
+  border: none;
+}
+.accordion-body {
+  box-shadow: var(--box-shadow);
+  padding: 2.4rem;
+}
+.accordion-item.collapsed {
+  border: none;
+  box-shadow: none;
+  background-color: none;
+}
+.accordion-item:last-of-type .accordion-button,
+.accordion-item:first-of-type .accordion-button {
+  border: none;
+  box-shadow: none;
+}
+.accordion-button:not(.collapsed),
+.accordion-button {
+  background-color: #eee;
+  color: #000;
+  font-weight: 700;
+  font-size: var(--fs-desc);
+}
+.accordion-button,
+.accordion-button:focus {
+  box-shadow: none;
+}
+.oneInput:nth-child(2),
+.oneInput:nth-child(3) {
+  margin: 2rem 0;
+}
+
+.div-btn-form-basic-S {
+  display: flex;
+  justify-content: end;
+}
+
+.description-search-bars {
+  margin: 4.8rem 0 2.4rem 0;
+  font-size: var(--fs-desc);
+}
+
+.btn-download-products {
+  width: 100%;
+  border: none;
+  background: none;
+  padding: 1.2rem 0;
+  background-color: #003f83;
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  text-transform: uppercase;
+  color: #fff;
+}
+/* End left */
+/* right */
+.right {
+  overflow-x: scroll;
+  margin-left:4.8rem;
+}
+.navbar-products {
+  margin-left: 15rem;
+  display: flex;
+  font-size: 1.8rem;
+  gap: 2.4rem;
+  background-color: var(--main-color);
+  padding: 0.6rem 1.6rem;
+  border-bottom: 1px solid #eee;
+}
+.navbar-products .nav-item a {
+  color: #fff;
 }

@@ -20,11 +20,380 @@
     <title>home / products</title>
   </head>
   <body>
-    <header>
-      <div class="overlay-head-sections"></div>
-        <h1 class="primary-heading-sections">Products</h1>
-        <h3 class="primary-heading"> <span>Elctrical Motors</span></h3>
-    </header>
+    <!-- primary-heading-sections -->
+    <h1 class="primary-heading-sections">Products</h1>
+    <!--End primary-heading-sections -->
+    <nav class="below-header container">
+      <!-- starter-sections -->
+      <div class="starter-sections">
+        <ion-icon class="home-icon" name="home-sharp"></ion-icon>
+        <a class="home" href="/index.html">Home</a>
+        <ion-icon class="arrow-icon" name="chevron-forward-sharp"></ion-icon>
+        <p class="title-section">Products</p>
+      </div>
+      <h3 class="primary-heading"><span>Elctrical Motors</span></h3>
+    </nav>
+    <!-- End starter-sections -->
+    <section class="products-section ">
+      <!-- start left -->
+      <div class="left">
+        <div class="accordion" id="accordionExample">
+          <!--  -->
+          <div class="accordion-item products-Basic-s mb-5">
+            <h2 class="accordion-header" id="headingOne">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                Basic Search
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <!-- Start form -->
+                <form action="#">
+                  <div class="oneInput">
+                    <label for="brand-name">Brand Name</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="brand-name"
+                      placeholder="Brand Name"
+                    />
+                  </div>
+                  <div class="oneInput">
+                    <label for="motor-model">Motor Model</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="motor-model"
+                      placeholder="Motor Model"
+                    />
+                  </div>
+                  <div class="oneInput">
+                    <label for="reted-power">Reted Power</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="reted-power"
+                      placeholder="Reted Power"
+                    />
+                  </div>
+
+                  <div class="div-btn-form-basic-S">
+                    <button type="submit" class="btn-form-basic-S threed-btn">
+                      Submit
+                    </button>
+                  </div>
+                </form>
+                <!-- End form -->
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <div class="accordion-item products-advanced-s">
+            <h2 class="accordion-header" id="headingTwo">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                Advanced Search
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingTwo"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <form action="#">
+                  <div class="oneInput">
+                    <label for="brand-name">Brand Name</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="brand-name"
+                      placeholder="Brand Name"
+                    />
+                  </div>
+                  <div class="oneInput">
+                    <label for="motor-model">Motor Model</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="motor-model"
+                      placeholder="Motor Model"
+                    />
+                  </div>
+                  <div class="oneInput">
+                    <label for="reted-power">Reted Power</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="reted-power"
+                      placeholder="Reted Power"
+                    />
+                  </div>
+
+                  <div class="div-btn-form-basic-S">
+                    <button type="submit" class="btn-form-basic-S threed-btn">
+                      Submit
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+        </div>
+        <p class="description-search-bars">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut laborum
+          sed rem libero maxime doloremque?
+        </p>
+        <div class="footer-left">
+          <button class="btn-download-products">
+            <ion-icon name="document-outline"></ion-icon> sdownlaod products
+          </button>
+        </div>
+      </div>
+      <!-- end left -->
+      <!-- start right -->
+      <div class="right">
+        <ul class="navbar-products">
+
+          <!--  -->
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDarkDropdownMenuLink"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Brand
+            </a>
+            <ul
+              class="dropdown-menu dropdown-menu-dark"
+              aria-labelledby="navbarDarkDropdownMenuLink"
+            >
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </li>
+            </ul>
+          </li>
+          <!--  -->
+          <!--  -->
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDarkDropdownMenuLink"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Model
+            </a>
+            <ul
+              class="dropdown-menu dropdown-menu-dark"
+              aria-labelledby="navbarDarkDropdownMenuLink"
+            >
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </li>
+            </ul>
+          </li>
+          <!--  -->
+          <!--  -->
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDarkDropdownMenuLink"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Supplier
+            </a>
+            <ul
+              class="dropdown-menu dropdown-menu-dark"
+              aria-labelledby="navbarDarkDropdownMenuLink"
+            >
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </li>
+            </ul>
+          </li>
+          <!--  -->
+          <!--  -->
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDarkDropdownMenuLink"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Poles
+            </a>
+            <ul
+              class="dropdown-menu dropdown-menu-dark"
+              aria-labelledby="navbarDarkDropdownMenuLink"
+            >
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </li>
+            </ul>
+          </li>
+          <!--  -->
+          <!--  -->
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDarkDropdownMenuLink"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Rated Power
+            </a>
+            <ul
+              class="dropdown-menu dropdown-menu-dark"
+              aria-labelledby="navbarDarkDropdownMenuLink"
+            >
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </li>
+            </ul>
+          </li>
+          <!--  -->
+          <!--  -->
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDarkDropdownMenuLink"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              AC/DV type
+            </a>
+            <ul
+              class="dropdown-menu dropdown-menu-dark"
+              aria-labelledby="navbarDarkDropdownMenuLink"
+            >
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </li>
+            </ul>
+          </li>
+          <!--  -->
+          <!--  -->
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDarkDropdownMenuLink"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Full Load Efficiency
+            </a>
+            <ul
+              class="dropdown-menu dropdown-menu-dark"
+              aria-labelledby="navbarDarkDropdownMenuLink"
+            >
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </li>
+            </ul>
+          </li>
+          <!--  -->
+          <!--  -->
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDarkDropdownMenuLink"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Lorem, ipsum.
+            </a>
+            <ul
+              class="dropdown-menu dropdown-menu-dark"
+              aria-labelledby="navbarDarkDropdownMenuLink"
+            >
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </li>
+            </ul>
+          </li>
+          <!--  -->
+          <!--  -->
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDarkDropdownMenuLink"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Lorem, ipsum.
+            </a>
+            <ul
+              class="dropdown-menu dropdown-menu-dark"
+              aria-labelledby="navbarDarkDropdownMenuLink"
+            >
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </li>
+            </ul>
+          </li>
+          <!--  -->
+        </ul>
+      </div>
+    </section>
     <!-- Scripts -->
     <script
       type="module"
