@@ -1,3 +1,8 @@
+const menu = document.querySelector(".menu-icon");
+menu.addEventListener("click", (e) => {
+  e.currentTarget.classList.toggle("active");
+});
+
 var swiper = new Swiper(".slide-content", {
   slidesPerView: 3,
   spaceBetween: 25,
@@ -27,7 +32,6 @@ var swiper = new Swiper(".slide-content", {
     },
   },
 });
-
 
 //  Caruosel slider has 2 btn above slider
 let next = document.querySelector(".next");
@@ -75,3 +79,15 @@ function showSlides(n) {
 
   slides[slideIndex - 1].classList.add("active");
 }
+
+//  button scroll left in products section 
+// dosn't work becuse i can't cach elements by querySelector
+
+
+// let btnScrollLeft = document.querySelector(".scroll-btn-table");
+// let rightProducts = document.querySelector(".right-products");
+// console.log(btnScrollLeft, rightProducts);
+
+// btnScrollLeft.addEventListener("click", () => {
+//   sideScroll(rightProducts, "right", 25, 100, 10);
+// });

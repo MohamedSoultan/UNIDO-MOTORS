@@ -3,14 +3,18 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
 }
 :root {
   --default-size: 2rem;
-  --main-color: #01bcff;
+  --main-color: #00BBE3;
+  --main-hover : #0099CF;
   --fs-desc: 1.8rem;
   --transition: all 0.3s;
   --box-shadow: 0 0 15px 0px rgb(0, 0, 0, 0.2);
+}
+@font-face {
+  font-family: "SEGOEUI";
+  src: url(/Fonts/SEGOEUI.TTF);
 }
 li,
 a:any-link {
@@ -131,7 +135,7 @@ ul,
 /* Start Primary Heading Sections */
 .primary-heading-sections {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(/images/hero-img.jpg);
+    url(../images/img-about.jpg);
   height: 20vh;
   font-weight: 900;
   font-size: 5.4rem;
