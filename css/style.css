@@ -427,7 +427,7 @@
   font-size: 1.5rem;
 }
 .below-header {
-  margin-left: 8.6rem;
+  margin-left: 8.6rem ;
 }
 .below-header .home {
   font-size: var(--fs-desc);
@@ -510,7 +510,7 @@
   overflow-x: scroll;
 }
 .table-products {
-  width: 150%;
+  width: 160%;
   font-size: 18px;
   border-collapse: collapse;
   position: relative;
@@ -526,7 +526,7 @@ td {
   cursor: pointer;
 }
 .thead-products th {
-  width: 9%; 
+  width:9%; 
 }
 .thead-products tr {
   background-color: var(--main-color);
