@@ -4,13 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css.map" />
     <link type="text/css" rel="stylesheet" href="css/style.css" />
     <link type="text/css" rel="stylesheet" href="css/global.css" />
     <link type="text/css" rel="stylesheet" href="css/media.css" />
@@ -33,7 +28,7 @@
           </span>
         </div>
         <div class="logo-icon">
-          <img src="./images/logo.svg" width="80px" height="80px" alt="" />
+          <img src="./images/logo.svg" alt="" />
         </div>
       </div>
       <!--///////////////////////////////////////////////////////////////////////////////////////////////// Start nav -->
@@ -45,7 +40,42 @@
       <nav class="hero-nav flex-column d-flex">
         <div class="login-lang pb-3 d-flex align-center gap-5">
           <div class="login">
-            <ion-icon name="person-outline"></ion-icon> Login
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20.146"
+              height="22.414"
+              viewBox="0 0 20.146 22.414"
+            >
+              <g
+                id="Icon_feather-user"
+                data-name="Icon feather-user"
+                transform="translate(-5 -3.5)"
+              >
+                <path
+                  id="Path_52"
+                  data-name="Path 52"
+                  d="M24.146,29.3V27.036A4.536,4.536,0,0,0,19.609,22.5H10.536A4.536,4.536,0,0,0,6,27.036V29.3"
+                  transform="translate(0 -4.391)"
+                  fill="none"
+                  stroke="#fff"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                />
+                <path
+                  id="Path_53"
+                  data-name="Path 53"
+                  d="M21.073,9.036A4.536,4.536,0,1,1,16.536,4.5,4.536,4.536,0,0,1,21.073,9.036Z"
+                  transform="translate(-1.464)"
+                  fill="none"
+                  stroke="#fff"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                />
+              </g>
+            </svg>
+            Login
           </div>
           <div class="lang">
             <button>العربية</button>
@@ -53,7 +83,7 @@
           </div>
         </div>
         <ul
-          class="ul pt-4 d-flex justify-center gap-3 text-uppercase position-relative p-0"
+          class="ul pt-4 d-flex justify-center text-uppercase position-relative p-0"
         >
           <li>
             <a class="text-white" href="#"
@@ -61,7 +91,7 @@
             >
           </li>
           <li>
-            <a class="text-white" href="./sections/products.html"
+            <a class="text-white" href="./components/products.html"
               ><button class="btn-nav">products</button></a
             >
           </li>
@@ -80,22 +110,27 @@
           </li>
           <li>
             <a class="text-white" href="#"
-              ><button class="btn-nav">faq & inquiries</button></a
+              ><button class="btn-nav">faq and inquiries</button></a
             >
           </li>
         </ul>
       </nav>
       <!--///////////////////////////////////////////////////////////////////////////////////////////////// End nav -->
+
       <!--///////////////////////////////////////////////////////////////////////////////////////////////// Start Intro Text  has position  -->
       <div class="hero-text">
         <h1 class="hero-heading text-uppercase">unido</h1>
-        <h3 class="hero-description">progress by innvation</h3>
-        <div class="form">
-          <input type="text" placeholder="&#61442; Quick Search" />
-          <button class="hero-btn">
+        <h3 class="hero-description">Progress by innvation</h3>
+
+        <div class="search-bar-div">
+          <form class="form-search-bar example" action="#">
+            <input type="text" placeholder="Search..." name="search2" />
+          </form>
+          <button class="btn-search" type="submit">
             <ion-icon class="hero-icon-search" name="search-outline"></ion-icon>
           </button>
         </div>
+
         <ion-icon class="hero-icon-advanced" name="add-outline"></ion-icon>
         <button class="advanced-btn">Advanced Search</button>
       </div>
@@ -103,15 +138,22 @@
 
       <!--///////////////////////////////////////////////////////////////////////////////////////////////// Start Register Product -->
       <div class="register-product">
-        <ion-icon class="icon-docs" name="document-text"></ion-icon>
-        <div class="deteils">
-          <p class="desc-register">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            Accusantium, facere. Lorem ipsum, dolor sit amet consectetur
-            adipisicing elit. Libero, cumque.
-          </p>
-          <button class="primary-btn text-uppercase">register prduct</button>
+        <div class="hero-img-icon-register">
+          <img src="./images/icon-doc.svg" alt="" />
+          <div class="deteils">
+            <p class="desc-register">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Accusantium, facere. Lorem ipsum, dolor sit amet consectetur
+              adipisicing elit. Libero, cumque.
+            </p>
+            <button class="primary-btn text-uppercase btn hero-btn-register">
+              register prduct
+            </button>
+          </div>
         </div>
+        <!-- <button class="primary-btn text-uppercase btn hero-btn-register">
+          register prduct
+        </button> -->
       </div>
       <!--///////////////////////////////////////////////////////////////////////////////////////////////// End Register Product -->
       <!-- scorll down elemnt left bttom has position -->
@@ -138,7 +180,7 @@
           <a class="a-btn-about" href="#"
             ><button class="secondary-btn">
               <a href="#">READ MORE</a>
-              <ion-icon name="chevron-forward-outline"></ion-icon></button
+              <img src="./images/arrow-forward.svg" alt="" /></button
           ></a>
         </div>
         <div class="img-about">
@@ -188,12 +230,9 @@
                     ducimus eligendi dolore. Perferendis ratione vel excepturi
                     omnis a vero quis repellendus rerum?
                   </p>
-                  <button class="secondary-btn">
+                  <button class="secondary-btn secondary-btn-news">
                     <a href="#">READ MORE</a>
-                    <ion-icon
-                      class="icon-news"
-                      name="chevron-forward-outline"
-                    ></ion-icon>
+                    <img src="./images/arrow-forward.svg" alt="" />
                   </button>
                 </div>
               </div>
@@ -221,39 +260,9 @@
                     ducimus eligendi dolore. Perferendis ratione vel excepturi
                     omnis a vero quis repellendus rerum?
                   </p>
-                  <button class="secondary-btn">
-                    <a href="./news-products.html">READ MORE</a>
-                    <ion-icon name="chevron-forward-outline"></ion-icon>
-                  </button>
-                </div>
-              </div>
-              <!--  -->
-              <!--  -->
-              <div class="card swiper-slide text-light">
-                <div class="image-content">
-                  <div class="card-image">
-                    <img
-                      src="./images/mortor-p-news.jpg"
-                      alt=""
-                      class="card-img"
-                    />
-                  </div>
-                </div>
-                <div class="card-content">
-                  <p class="data">18 jan, 2023</p>
-                  <p class="title text-white">
-                    The lorem text the section that contains
-                  </p>
-                  <hr />
-                  <p class="description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Maxime placeat ad est cumque, alias totam dicta saepe
-                    ducimus eligendi dolore. Perferendis ratione vel excepturi
-                    omnis a vero quis repellendus rerum?
-                  </p>
-                  <button class="secondary-btn">
+                  <button class="secondary-btn secondary-btn-news">
                     <a href="#">READ MORE</a>
-                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                    <img src="./images/arrow-forward.svg" alt="" />
                   </button>
                 </div>
               </div>
@@ -281,9 +290,9 @@
                     ducimus eligendi dolore. Perferendis ratione vel excepturi
                     omnis a vero quis repellendus rerum?
                   </p>
-                  <button class="secondary-btn">
-                    <a href="/news-products.html">READ MORE</a>
-                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                  <button class="secondary-btn secondary-btn-news">
+                    <a href="#">READ MORE</a>
+                    <img src="./images/arrow-forward.svg" alt="" />
                   </button>
                 </div>
               </div>
@@ -311,9 +320,9 @@
                     ducimus eligendi dolore. Perferendis ratione vel excepturi
                     omnis a vero quis repellendus rerum?
                   </p>
-                  <button class="secondary-btn">
-                    <a href="/news-products.html">READ MORE</a>
-                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                  <button class="secondary-btn secondary-btn-news">
+                    <a href="#">READ MORE</a>
+                    <img src="./images/arrow-forward.svg" alt="" />
                   </button>
                 </div>
               </div>
@@ -334,7 +343,7 @@
             <span>Case studies</span>
           </h2>
           <button class="secondary-btn">
-            ALL CASES <ion-icon class="fw-5" name="add-outline"></ion-icon>
+            ALL CASES <img src="./images/Icon-plus.svg" alt="" />
           </button>
         </div>
 
@@ -353,7 +362,9 @@
                 elit. Ipsam, ea?
               </p>
               <div class="footer-slide">
-                <button class="secondary-btn">READ MORE</button>
+                <button class="secondary-btn">
+                  READ MORE <img src="./images//arrow-forward.svg" alt="" />
+                </button>
                 <img src="./images/img-sucss.jpg" />
               </div>
             </div>
@@ -416,28 +427,333 @@
         </div>
       </section>
       <!--///////////////////////////////////////////////////////////////////////////////////////////////// End sucss Section -->
+      <!--///////////////////////////////////////////////////////////////////////////////////////////////// Start platform Section -->
+      <section class="platform">
+        <h3 class="primary-heading text-center">
+          Platform <span>Sponsars</span>
+        </h3>
+        <div class="text-center my-3">
+          <div class="row mx-auto my-auto justify-content-center">
+            <div
+              id="recipeCarousel"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                  <div class="col">
+                    <div class="box-platform">
+                      <div class="card-img">
+                        <img
+                          src="./images/product-platform.svg"
+                          class="img-fluid"
+                        />
+                      </div>
+                    </div>
+                    <p class="descriptopn-box-platform fw-bold mt-3">
+                      Lorem ipsum dolor sit amet.
+                    </p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="col">
+                    <div class="box-platform">
+                      <div class="card-img">
+                        <img
+                          src="./images/product-platform.svg"
+                          class="img-fluid"
+                        />
+                      </div>
+                    </div>
+                    <p class="descriptopn-box-platform fw-bold mt-3">
+                      Lorem ipsum dolor sit amet.
+                    </p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="col">
+                    <div class="box-platform">
+                      <div class="card-img">
+                        <img
+                          src="./images/product-platform.svg"
+                          class="img-fluid"
+                        />
+                      </div>
+                    </div>
+                    <p class="descriptopn-box-platform fw-bold mt-3">
+                      Lorem ipsum dolor sit amet.
+                    </p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="col">
+                    <div class="box-platform">
+                      <div class="card-img">
+                        <img
+                          src="./images/product-platform.svg"
+                          class="img-fluid"
+                        />
+                      </div>
+                    </div>
+                    <p class="descriptopn-box-platform fw-bold mt-3">
+                      Lorem ipsum dolor sit amet.
+                    </p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="col">
+                    <div class="box-platform">
+                      <div class="card-img">
+                        <img
+                          src="./images/product-platform.svg"
+                          class="img-fluid"
+                        />
+                      </div>
+                    </div>
+                    <p class="descriptopn-box-platform fw-bold mt-3">
+                      Lorem ipsum dolor sit amet.
+                    </p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="col">
+                    <div class="box-platform">
+                      <div class="card-img">
+                        <img
+                          src="./images/product-platform.svg"
+                          class="img-fluid"
+                        />
+                      </div>
+                    </div>
+                    <p class="descriptopn-box-platform fw-bold mt-3">
+                      Lorem ipsum dolor sit amet.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <a
+                class="carousel-control-prev bg-transparent w-aut"
+                href="#recipeCarousel"
+                role="button"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon shadow-btn"
+                  aria-hidden="true"
+                ></span>
+              </a>
+              <a
+                class="carousel-control-next bg-transparent w-aut"
+                href="#recipeCarousel"
+                role="button"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon shadow-btn"
+                  aria-hidden="true"
+                ></span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="doucment-section container">
+          <p class="1-p">
+            “The designations and the presentation of the material on this
+            website do not imply the expression of any opinion whatsoever on the
+            part of the Secretariat of the United Nations Industrial Development
+            Organization (UNIDO) concerning the legal status of any country,
+            territory, city or area of its authorities, or concerning the
+            delimitation of its frontiers or boundaries, or its economic system
+            or degree of development. Designations such as “developed”,
+            “industrialized” and “developing” are intended for statistical
+            convenience and do not necessarily express a judgment about the
+            stage reached by a particular country or area in the development
+            process. Mention of company names or commercial products does not
+            constitute an endorsement by UNIDO. Although great care is been
+            taken to maintain the accuracy of the information presented, neither
+            UNIDO nor its member states assume any responsibility for
+            consequences which may arise from the use of the material.
+          </p>
+          <p class="2-p">
+            UNIDO makes no warranties, either express or implied, concerning the
+            accuracy, completeness, reliability, or suitability of the
+            information. Neither does it warrant that use of the information is
+            free of any claims of copyright infringement. Under no circumstances
+            shall UNIDO be liable for any loss, damage, liability or expense
+            incurred or suffered that is claimed to have resulted from the use
+            of this website, including, without limitation, any fault, error,
+            omission, computer virus, interruption or delay with respect
+            thereto. The use of this website is at the user’s sole risk.
+          </p>
+          <p class="3-p">
+            UNIDO cannot and does not guarantee the authenticity of documents on
+            the Internet. Links to non-UNIDO sites do not imply any official
+            endorsement of or responsibility for the opinions, ideas, data, or
+            products presented at these locations, or guarantee the validity of
+            the information provided. Links to non-UNIDO websites are provided
+            solely as a pointer to information on topics that may be useful to
+            UNIDO staff, Member States and the public.
+          </p>
+          <p class="4-p">
+            The use of particular designations of countries or territories does
+            not imply any judgement by UNIDO as to the legal status of such
+            countries or territories, of their authorities and institutions or
+            of the delimitation of their boundaries.
+          </p>
+          <p class="5-p">
+            The mention of names of specific companies or products (whether or
+            not indicated as registered) does not imply any intention to
+            infringe proprietary rights, nor should it be construed as an
+            endorsement or recommendation on the part of UNIDO.
+          </p>
+          <p class="6-p">
+            Under no circumstances shall the United Nations Industrial
+            Development Organization be liable for any loss, damage, liability
+            or expense incurred or suffered that is claimed to have resulted
+            from the use of this Site, including, without limitation, any fault,
+            error, omission, interruption or delay with respect thereto”.
+          </p>
+        </div>
+      </section>
+      <!--///////////////////////////////////////////////////////////////////////////////////////////////// End platform Section -->
     </main>
-    <!-- Scripts -->
+    <footer class="footer">
+      <section class="">
+        <!-- Footer -->
+        <div class=" text-white text-right text-md-start">
+          <!-- Grid container -->
+          <div class="container p-4">
+            <!--Grid row-->
+            <div class="footer-content row">
+              <!--Grid column-->
+              <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                <div class="logos d-flex gap-5 footer-logos">
+                  <div class="logo-text">
+                    LOGO<br />
+                    <span class="spcial-text">
+                      <span>H</span>
+                      <span>E</span>
+                      <span>R</span>
+                      <span>E</span>
+                    </span>
+                  </div>
+                  <div class="logo-icon">
+                    <img src="./images/logo.svg" alt="" />
+                  </div>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                  pulvinar accumsan tellus, ac blandit est fringilla vel.
+                </p>
+              </div>
+              <!--Grid column-->
+
+              <!--Grid column-->
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <ul class="quick-links text-uppercase">
+                  <li>
+                    <h5 class="text-uppercase">Quick Links</h5>
+                  </li>
+                  <li>
+                    <img src="./images/Ellipse 2.png" alt=""><a href="#!" class="text-white"> products</a>
+                  </li>
+                  <li>
+                    <img src="./images/Ellipse 2.png" alt=""><a href="#!" class="text-white"> business development</a>
+                  </li>
+                  <li>
+                    <img src="./images/Ellipse 2.png" alt=""><a href="#!" class="text-white"> Complaint</a>
+                  </li>
+                  <li>
+                    <img src="./images/Ellipse 2.png" alt=""><a href="#!" class="text-white"> FAQ and Inquiries</a>
+                  </li>
+                </ul>
+              </div>
+              <!--Grid column-->
+
+              <!--Grid column-->
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <ul class="contact-us">
+                  <li>
+                    <h5 class="text-uppercase">Contact Us</h5>
+                  </li>
+                  <li>
+                    <img src="./images/Icon awesome-phone-alt.svg" alt="" />
+                    <a
+                      href="#!"
+                      class="text-white"
+                      >+022 3415154 / 0114 66 86 441</a
+                    >
+                  </li>
+                  <li>
+                    <img src="./images/Icon zocial-email.svg" alt="" /><a
+                      href="#!"
+                      class="text-white"
+                    >
+                      unido@info.com</a
+                    >
+                  </li>
+                  <li>
+                    <img
+                      src="./images/Icon material-location-on.svg"
+                      alt=""
+                    /><a href="#!" class="text-white">
+                      187 Ahmed naguib St, Cairo Egypt</a
+                    >
+                  </li>
+                  <li>
+                    <img src="./images/Icon metro-earth.svg" alt="" /><a
+                      href="#!"
+                      class="text-white"
+                    >
+                      www.eos.ord.eg/en</a
+                    >
+                  </li>
+                  <div class="social-icons-footer d-flex gap-5 ">
+                    <img src="./images/facebook.svg" alt="" />
+                    <img src="./images/twitter.svg" alt="" />
+                    <img src="./images/linkedin.svg" alt="" />
+                    <img src="./images/youtube.svg" alt="" />
+                  </div>
+                </ul>
+              </div>
+              <!--Grid column-->
+            </div>
+            <!--Grid row-->
+          </div>
+          <!-- Grid container -->
+
+          <!-- Copyright -->
+          <div
+            class="copyright text-center p-3 d-flex justify-between container"
+          >
+            <p class="copyright-text">
+              Copyright 2022 UNIDO Motors. All Rights Reserved.
+            </p>
+
+          </div>
+          <!-- Copyright -->
+        </div>
+        <!-- Footer -->
+      </section>
+    </footer>
+    <!-- inoin icons librery -->
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
     ></script>
-    <!-- bootstrap -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-      crossorigin="anonymous"
-    ></script>
+    <!--End inoin icons librery -->
+
+    <!-- bootstrap files -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js.map"></script>
+    <!--End bootstrap files -->
 
     <!-- Swiper JS -->
     <script src="js/swiper-bundle.min.js"></script>
+    <!--End Swiper JS -->
 
     <!-- JavaScript -->
     <script src="js/script.js"></script>
+    <!--End JavaScript -->
   </body>
 </html>

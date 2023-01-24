@@ -10,6 +10,9 @@
   html {
     font-size: 55%;
   }
+  .hero-section {
+    padding: 3rem 2.4rem 0;
+  }
   .about {
     grid-template-columns: 1fr;
   }
@@ -30,11 +33,44 @@
     font-size: 4.2rem;
   }
 }
-@media  (max-width: 68em) {
+@media (max-width: 68em) {
   .hero-nav {
     display: none !important;
   }
   .menu-icon {
     display: block;
+  }
+}
+
+@media (max-width: 50em) {
+  .form-search-bar input[type="text"] {
+    width: 250px;
+  }
+  .hero-text {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .register-product {
+    color: #000;
+    width: 83vw;
+    height: 28rem;
+    background-color: #fff;
+    bottom: -19rem;
+    right: -1px;
+    padding: 2rem 5rem;
+    gap: 2.4rem;
+  }
+  .register-product::before {
+    width: 8rem;
+    height: 45rem;
+    left: -7rem;
+    top: 17rem;
+  }
+  .hero-img-icon-register {
+    display: block;
+  }
+  .about {
+    margin-top: 60rem;
   }
 }

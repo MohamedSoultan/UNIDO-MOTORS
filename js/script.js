@@ -1,7 +1,9 @@
+// meun toggle
 const menu = document.querySelector(".menu-icon");
 menu.addEventListener("click", (e) => {
   e.currentTarget.classList.toggle("active");
 });
+//End meun toggle
 
 var swiper = new Swiper(".slide-content", {
   slidesPerView: 3,
@@ -59,7 +61,6 @@ function currentSlide(n) {
 function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
   if (n > slides.length) {
     slideIndex = 1;
   }
@@ -68,26 +69,25 @@ function showSlides(n) {
   }
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
-    slides[i].style.transform = " translateX(-500px);";
-
     slides[i].classList.remove("active");
   }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
   slides[slideIndex - 1].style.display = "block";
-
   slides[slideIndex - 1].classList.add("active");
 }
 
-//  button scroll left in products section 
-// dosn't work becuse i can't cach elements by querySelector
+// platform section
+let items = document.querySelectorAll(".carousel .carousel-item");
 
-
-// let btnScrollLeft = document.querySelector(".scroll-btn-table");
-// let rightProducts = document.querySelector(".right-products");
-// console.log(btnScrollLeft, rightProducts);
-
-// btnScrollLeft.addEventListener("click", () => {
-//   sideScroll(rightProducts, "right", 25, 100, 10);
-// });
+items.forEach((el) => {
+  const minPerSlide = 6;
+  let next = el.nextElementSibling;
+  for (var i = 1; i < minPerSlide; i++) {
+    if (!next) {
+      // wrap carousel by using first child
+      next = items[0];
+    }
+    let cloneChild = next.cloneNode(true);
+    el.appendChild(cloneChild.children[0]);
+    next = next.nextElementSibling;
+  }
+});

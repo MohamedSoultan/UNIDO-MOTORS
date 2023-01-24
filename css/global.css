@@ -5,23 +5,27 @@
   box-sizing: border-box;
 }
 :root {
-  --default-size: 2rem;
-  --main-color: #00BBE3;
-  --main-hover : #0099CF;
+  --default-size: 1.8rem;
+  --main-color: #00bbe3;
+  --main-hover: #0099cf;
   --fs-desc: 1.8rem;
   --transition: all 0.3s;
   --box-shadow: 0 0 15px 0px rgb(0, 0, 0, 0.2);
+}
+ul {
+  padding: 0;
 }
 @font-face {
   font-family: "SEGOEUI";
   src: url(/Fonts/SEGOEUI.TTF);
 }
-li,
+
 a:any-link {
   text-decoration: none;
+}
+li {
   list-style: none;
 }
-
 html {
   font-size: 62.5%;
 }
@@ -39,11 +43,6 @@ ul,
 }
 /* Golbal Role */
 
-.hero-text {
-  left: 10%;
-  top: 50%;
-  transform: translateY(-50%);
-}
 /* Start primary button */
 .primary-btn {
   font-size: 2.4rem;
@@ -51,7 +50,7 @@ ul,
   background-color: var(--main-color);
   border: none;
   color: #fff;
-  margin-top: 5rem;
+  margin-top: 4rem;
   transition: var(--transition);
   text-transform: uppercase;
 }
@@ -72,14 +71,12 @@ ul,
   background: none;
   position: relative;
   padding: 2rem 0;
-  color: #000;
   transition: var(--transition);
   text-transform: uppercase;
+  display: flex;
+  column-gap: 0.3rem;
 }
-.news-events .secondary-btn a,
-.news-events .secondary-btn a {
-  color: #fff !important;
-}
+
 .secondary-btn::after {
   content: "";
   position: absolute;
@@ -104,6 +101,10 @@ ul,
 .secondary-btn:hover:after {
   width: 100%;
   background-color: var(--main-color);
+}
+.secondary-btn-news,
+.secondary-btn-news a {
+  color: #fff;
 }
 /* Start secondary button */
 /* Start threed button */
@@ -165,3 +166,20 @@ ul,
   margin-bottom: 0;
 }
 /* End starter-sections */
+
+.below-header {
+  margin-left: 8.6rem;
+}
+.below-header .home {
+  font-size: var(--fs-desc);
+  color: #000;
+}
+.below-header .title-section {
+  font-size: var(--fs-desc);
+  font-weight: 900;
+  color: var(--main-color);
+}
+.home-icon,
+.arrow-icon {
+  font-size: var(--fs-desc);
+}
