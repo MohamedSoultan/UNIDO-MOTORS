@@ -111,6 +111,7 @@
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
       url(../images/mobile-images/hero-img-mobile.png);
   }
+  /* Start News section */
   .news-events {
     padding: 200px 0px 100px;
     background-image: linear-gradient(
@@ -122,6 +123,8 @@
   .news-head {
     margin-bottom: 64px;
   }
+  /* End News section */
+
   .left-sucss {
     padding: 0 24px;
     display: flex;
@@ -144,10 +147,13 @@
   .next {
     left: 100px;
   }
+  /* Start News section */
+
   .footer {
     background-image: linear-gradient(#0099cf, rgba(0, 152, 207, 0.5)),
       url(../images/mobile-images/bg-footer-mobile.png);
   }
+
   .primary-btn {
     font-size: 2rem;
   }
@@ -161,6 +167,7 @@
   .below-header {
     margin: 24px;
   }
+  /* End products section */
   .left-products {
     margin: 24px;
   }
@@ -198,6 +205,8 @@
     flex-direction: column;
     margin-bottom: 250px;
   }
+  /* Start products section */
+
   /*Start media Navgation */
   .menu-icon {
     display: block;
