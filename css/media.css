@@ -86,7 +86,6 @@
   .shadow-btn {
     box-shadow: none;
   }
-
 }
 /* medium and up screens */
 @media (min-width: 768px) {
@@ -141,11 +140,9 @@
   }
   .prev {
     left: 10px;
-
   }
   .next {
     left: 100px;
-
   }
   .footer {
     background-image: linear-gradient(#0099cf, rgba(0, 152, 207, 0.5)),
@@ -153,6 +150,53 @@
   }
   .primary-btn {
     font-size: 2rem;
+  }
+
+  .bg-img-products {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(../images/mobile-images/bg-products-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .below-header {
+    margin: 24px;
+  }
+  .left-products {
+    margin: 24px;
+  }
+  .right-products td,
+  .right-products th {
+    font-size: 1.8rem;
+    padding: 12px 24px;
+  }
+  .scroll-btn-table {
+    top: 160%;
+  }
+  .table-products {
+    width: 120%;
+  }
+  .btn-download-products {
+    margin-bottom: 54px;
+    width: 80%;
+    font-size: 18px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .pagination-container {
+    justify-content: center;
+    margin: 24px;
+  }
+  .pagination {
+    margin: 0;
+  }
+  .pagination a {
+    margin: 0;
+  }
+  .products-section {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 250px;
   }
   /*Start media Navgation */
   .menu-icon {
@@ -251,7 +295,6 @@
   }
   .doucment-section {
     padding: 48px 24px 24px;
-
   }
   .footer {
     padding: 0;
@@ -262,10 +305,5 @@
   .right-corner-content::before {
     top: 130px;
     height: 350px;
-  }
-  .products-section {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 350px;
   }
 }

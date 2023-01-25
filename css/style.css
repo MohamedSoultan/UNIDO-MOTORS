@@ -619,7 +619,7 @@
   font-size: 1.5rem;
 }
 
-.left {
+.left-products {
   margin-left: 96px;
 }
 .accordion-item {
@@ -707,6 +707,7 @@ td {
 .thead-products th {
   width: 9%;
 }
+
 .thead-products tr {
   background-color: var(--main-color);
   color: #fff;
