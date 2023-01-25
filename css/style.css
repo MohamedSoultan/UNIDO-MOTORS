@@ -171,9 +171,9 @@
 }
 
 .advanced-serachbar {
-  position: absolute;
-  right: 805px;
-  bottom: -30px;
+  display: flex;
+  justify-content: center;
+  width: 62%;
 }
 .advanced-serachbar a {
   display: flex;
