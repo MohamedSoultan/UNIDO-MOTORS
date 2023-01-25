@@ -184,12 +184,11 @@
   }
   .btn-download-products {
     margin-bottom: 54px;
-    width: 80%;
+    width: 100%;
     font-size: 18px;
     margin-left: auto;
     margin-right: auto;
   }
-
   .pagination-container {
     justify-content: center;
     margin: 24px;
@@ -199,6 +198,7 @@
   }
   .pagination a {
     margin: 0;
+    padding: 8px 10px;
   }
   .products-section {
     display: flex;
@@ -206,7 +206,28 @@
     margin-bottom: 250px;
   }
   /* Start products section */
-
+  .header-container {
+    width: 110%;
+    margin: 85px 8px;
+  }
+  .hero-title {
+    font-size: 4.8rem;
+  }
+  .hero-description {
+    font-size: 4rem;
+    margin-bottom: 24px;
+    width: 200%;
+  }
+  .searchBar-hero {
+    max-width: 100%;
+  }
+  .hero-input {
+    width: 70%;
+    padding: 6px 12px;
+  }
+  .advanced-serachbar {
+    width: 105%;
+  }
   /*Start media Navgation */
   .menu-icon {
     display: block;
@@ -226,29 +247,37 @@
   .nav-container.active .navigation {
     display: block;
   }
-  .nav-container {
-    padding: 12px;
+  .nav-container.active .logo {
+    width: 80%;
+    z-index: 30;
+    color: var(--main-color);
   }
-  .header-container {
-    width: 110%;
-    margin: 85px 8px;
+  .nav-container.active .top-nav {
+    margin: 0 24px;
+    position: absolute;
+    bottom: 125px;
   }
-  .hero-title {
-    font-size: 4.8rem;
+  .nav-container.active .bottom-nav {
+    margin: 0 24px;
+    margin-top: 125px;
+    border-bottom: 1px solid #aaa;
+    border-top: none;
   }
-  .hero-description {
-    font-size: 2rem;
+  .nav-container.active .nav-languages .div {
+    margin-bottom: 12px;
+  }
+  .nav-container.active .bottom-nav li {
+    font-size: 24px;
     margin-bottom: 24px;
   }
-  .searchBar-hero {
-    max-width: 100%;
+  .nav-container.active .nav-languages {
+    display: block;
   }
-  .hero-input {
-    width: 70%;
-    padding: 6px 12px;
+  .nav-container.active .logo-text {
+    border-right: 1px solid #aaa;
   }
-  .advanced-serachbar {
-    width: 105%;
+  .nav-container {
+    padding: 12px;
   }
   .list-links,
   .nav-languages,
@@ -269,7 +298,7 @@
     padding: 24px;
   }
   .document-img {
-    padding: 24px 48px 0 0;
+    padding: 32px 48px 0 0;
     margin-bottom: 24px;
   }
   .document-img img {
@@ -281,7 +310,7 @@
   .circle {
     height: 300px;
     left: 35%;
-    top: 110%;
+    top: 114%;
   }
   .half-circle {
     top: -250px;
