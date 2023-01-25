@@ -7,21 +7,28 @@
 :root {
   --default-size: 1.8rem;
   --main-color: #00bbe3;
+  --second-color: #044477;
   --main-hover: #0099cf;
   --fs-desc: 1.8rem;
   --transition: all 0.3s;
   --box-shadow: 0 0 15px 0px rgb(0, 0, 0, 0.2);
 }
-ul {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+ul,
+ol {
   padding: 0;
 }
 @font-face {
   font-family: "SEGOEUI";
   src: url(/Fonts/SEGOEUI.TTF);
-}
-
-a:any-link {
-  text-decoration: none;
 }
 li {
   list-style: none;
@@ -29,28 +36,30 @@ li {
 html {
   font-size: 62.5%;
 }
-.logos,
-ul,
-.login-lang,
-.hero-text {
-  z-index: 10;
-}
-.hero-text,
-.register-product,
-.scroll-down,
-.overlay {
+/* Golbal Role */
+
+.half-circle,
+.circle {
   position: absolute;
+}
+.half-circle {
+  top: -285px;
+  left: -200px;
+}
+.circle {
+  right: 115px;
+  top: 980px;
+  z-index: 1;
 }
 /* Golbal Role */
 
 /* Start primary button */
 .primary-btn {
   font-size: 2.4rem;
-  padding: 1rem 3.2rem;
+  padding: 10px 32px;
   background-color: var(--main-color);
   border: none;
   color: #fff;
-  margin-top: 4rem;
   transition: var(--transition);
   text-transform: uppercase;
 }
@@ -70,13 +79,23 @@ ul,
   font-size: var(--fs-desc);
   background: none;
   position: relative;
-  padding: 2rem 0;
+  padding: 20px 0;
   transition: var(--transition);
   text-transform: uppercase;
   display: flex;
-  column-gap: 0.3rem;
+  column-gap: 5px;
 }
-
+.secondary-btn a {
+  color: #111;
+  text-decoration: none;
+}
+.secondary-btn-news a {
+  color: #fff;
+}
+.secondary-btn svg path {
+  color: red;
+  background-color: red;
+}
 .secondary-btn::after {
   content: "";
   position: absolute;
@@ -91,10 +110,6 @@ ul,
   transform: scale(1.2);
   color: var(--main-color);
 }
-
-.secondary-btn a {
-  color: #000;
-}
 .secondary-btn:hover a {
   color: var(--main-color);
 }
@@ -102,21 +117,20 @@ ul,
   width: 100%;
   background-color: var(--main-color);
 }
-.secondary-btn-news,
-.secondary-btn-news a {
-  color: #fff;
-}
 /* Start secondary button */
 /* Start threed button */
 .threed-btn {
   border: none;
   background: none;
-  padding: 0.5rem 1rem;
   background-color: var(--main-color);
   color: #fff;
   text-transform: uppercase;
-  padding: 1rem 2.4rem;
+  padding: 10px 24px;
   font-size: 1.6rem;
+  transition: var(--transition);
+}
+.threed-btn:hover {
+  transform: scale(1.2);
 }
 /* End threed button */
 
@@ -133,10 +147,8 @@ ul,
 }
 /* End primary heading */
 
-/* Start Primary Heading Sections */
+/* Start starter-sections */
 .primary-heading-sections {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(../images/img-about.jpg);
   height: 20vh;
   font-weight: 900;
   font-size: 5.4rem;
@@ -146,33 +158,25 @@ ul,
   color: #fff;
   position: relative;
 }
-.overlay-head-sections {
-  position: absolute;
-  width: 100%;
-  height: 20vh;
-  top: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-/* End Primary Heading Sections */
-
-/* Start starter-sections */
-.starter-sections {
+.nav-sections {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 10px;
 }
 .starter-sections p {
   margin-bottom: 0;
 }
-/* End starter-sections */
-
 .below-header {
-  margin-left: 8.6rem;
+  margin: 48px 0 0 64px;
 }
 .below-header .home {
   font-size: var(--fs-desc);
   color: #000;
+  text-decoration: none;
+  transition: var(--transition);
+}
+.home:hover {
+  text-decoration: underline;
 }
 .below-header .title-section {
   font-size: var(--fs-desc);
@@ -183,3 +187,4 @@ ul,
 .arrow-icon {
   font-size: var(--fs-desc);
 }
+/* End starter-sections */

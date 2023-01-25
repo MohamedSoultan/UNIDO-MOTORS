@@ -1,8 +1,11 @@
-// meun toggle
-const menu = document.querySelector(".menu-icon");
-menu.addEventListener("click", (e) => {
-  e.currentTarget.classList.toggle("active");
+// burger icon
+let menuIcon = document.querySelector(".menu-icon");
+let navContainer = document.querySelector(".nav-container");
+menuIcon.addEventListener("click", () => {
+  navContainer.classList.toggle("active");
+  menuIcon.classList.toggle("active");
 });
+
 //End meun toggle
 
 var swiper = new Swiper(".slide-content", {

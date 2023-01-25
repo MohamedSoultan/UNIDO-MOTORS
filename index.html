@@ -4,165 +4,114 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Start Bootstrap library files for css-->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css.map" />
+    <!-- End Bootstrap library files  for css-->
     <link type="text/css" rel="stylesheet" href="css/style.css" />
     <link type="text/css" rel="stylesheet" href="css/global.css" />
     <link type="text/css" rel="stylesheet" href="css/media.css" />
-    <!-- Swiper CSS -->
+    <!-- End css styleing files  for css-->
+    <!--Start Swiper library file for css-->
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <!--End Swiper library file  for css-->
     <title>UNIDO</title>
   </head>
   <body>
     <!--///////////////////////////////////////////////////////////////////////////////////////////////// Start Hero section -->
-    <header class="hero-section text-white d-flex">
-      <!--/////////////////////////////////////////////////////////////////////////////////////////////////  above nav -->
-      <div class="logos d-flex gap-5">
-        <div class="logo-text">
-          LOGO<br />
-          <span class="spcial-text">
-            <span>H</span>
-            <span>E</span>
-            <span>R</span>
-            <span>E</span>
-          </span>
-        </div>
-        <div class="logo-icon">
-          <img src="./images/logo.svg" alt="" />
-        </div>
-      </div>
-      <!--///////////////////////////////////////////////////////////////////////////////////////////////// Start nav -->
-      <div class="menu-icon">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <nav class="hero-nav flex-column d-flex">
-        <div class="login-lang pb-3 d-flex align-center gap-5">
-          <div class="login">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="20.146"
-              height="22.414"
-              viewBox="0 0 20.146 22.414"
-            >
-              <g
-                id="Icon_feather-user"
-                data-name="Icon feather-user"
-                transform="translate(-5 -3.5)"
-              >
-                <path
-                  id="Path_52"
-                  data-name="Path 52"
-                  d="M24.146,29.3V27.036A4.536,4.536,0,0,0,19.609,22.5H10.536A4.536,4.536,0,0,0,6,27.036V29.3"
-                  transform="translate(0 -4.391)"
-                  fill="none"
-                  stroke="#fff"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                />
-                <path
-                  id="Path_53"
-                  data-name="Path 53"
-                  d="M21.073,9.036A4.536,4.536,0,1,1,16.536,4.5,4.536,4.536,0,0,1,21.073,9.036Z"
-                  transform="translate(-1.464)"
-                  fill="none"
-                  stroke="#fff"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                />
-              </g>
-            </svg>
-            Login
+    <header class="hero-section">
+      <nav class="nav-container">
+        <div class="logo">
+          <div class="logo-text">
+            <div class="lo">LOGO</div>
+            <div class="go">
+              <span>h</span>
+              <span>e</span>
+              <span>r</span>
+              <span>e</span>
+            </div>
           </div>
-          <div class="lang">
-            <button>العربية</button>
-            <button>EN</button>
+          <div class="logo-img">
+            <img src="./images/logo.svg" alt="" />
           </div>
         </div>
-        <ul
-          class="ul pt-4 d-flex justify-center text-uppercase position-relative p-0"
-        >
-          <li>
-            <a class="text-white" href="#"
-              ><button class="btn-nav">home page</button></a
-            >
-          </li>
-          <li>
-            <a class="text-white" href="./components/products.html"
-              ><button class="btn-nav">products</button></a
-            >
-          </li>
-          <li>
-            <a class="text-white" href="#"
-              ><button class="btn-nav">business development</button></a
-            >
-          </li>
-          <li>
-            <a class="text-white" href="#"
-              ><button class="btn-nav">awarness & knowledge</button></a
-            >
-          </li>
-          <li>
-            <a class="text-white" href="#"><button class="btn-nav"></button></a>
-          </li>
-          <li>
-            <a class="text-white" href="#"
-              ><button class="btn-nav">faq and inquiries</button></a
-            >
-          </li>
-        </ul>
+        <div class="menu-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="navigation">
+          <div class="top-nav">
+            <div class="nav-login">
+              <img src="./images/Icon-user.svg" alt="" />
+              <a href="#">login</a>
+            </div>
+            <div class="nav-languages">
+              <a href="#">العربية</a>
+              <a href="#">EN</a>
+            </div>
+          </div>
+          <div class="bottom-nav">
+            <ul class="list-links">
+              <li class="list-item"><a href="#">Home page</a></li>
+              <li class="list-item"><a href="./sections/products.html">products</a></li>
+              <li class="list-item"><a href="#">Business development</a></li>
+              <li class="list-item"><a href="#">Awareness & Knowledge</a></li>
+              <li class="list-item"><a href="#">Complaint</a></li>
+              <li class="list-item"><a href="#">FAQ and Inquiries</a></li>
+            </ul>
+          </div>
+        </div>
       </nav>
-      <!--///////////////////////////////////////////////////////////////////////////////////////////////// End nav -->
-
-      <!--///////////////////////////////////////////////////////////////////////////////////////////////// Start Intro Text  has position  -->
-      <div class="hero-text">
-        <h1 class="hero-heading text-uppercase">unido</h1>
-        <h3 class="hero-description">Progress by innvation</h3>
-
-        <div class="search-bar-div">
-          <form class="form-search-bar example" action="#">
-            <input type="text" placeholder="Search..." name="search2" />
-          </form>
-          <button class="btn-search" type="submit">
-            <ion-icon class="hero-icon-search" name="search-outline"></ion-icon>
-          </button>
+      <!-- Start intro section -->
+      <div class="header-container container">
+        <div class="hero-text-container">
+          <h1 class="hero-title">UNIDO</h1>
+          <p class="hero-description">Progress by innvation</p>
         </div>
-
-        <ion-icon class="hero-icon-advanced" name="add-outline"></ion-icon>
-        <button class="advanced-btn">Advanced Search</button>
-      </div>
-      <!--///////////////////////////////////////////////////////////////////////////////////////////////// End Intro Text -->
-
-      <!--///////////////////////////////////////////////////////////////////////////////////////////////// Start Register Product -->
-      <div class="register-product">
-        <div class="hero-img-icon-register">
-          <img src="./images/icon-doc.svg" alt="" />
-          <div class="deteils">
-            <p class="desc-register">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Accusantium, facere. Lorem ipsum, dolor sit amet consectetur
-              adipisicing elit. Libero, cumque.
-            </p>
-            <button class="primary-btn text-uppercase btn hero-btn-register">
-              register prduct
-            </button>
+        <form class="searchBar-hero">
+          <input class="hero-input" type="text" placeholder="Search..." />
+          <div class="advanced-serachbar">
+            <a href="#">
+              <img src="./images/icon-plus.svg" alt="" />
+              Advanced Serach</a
+            >
           </div>
-        </div>
-        <!-- <button class="primary-btn text-uppercase btn hero-btn-register">
-          register prduct
-        </button> -->
+          <button class="btn-hero">
+            <img
+              class="hero-serachIcon"
+              src="./images/Icon-search.svg"
+              alt=""
+            />
+          </button>
+        </form>
       </div>
-      <!--///////////////////////////////////////////////////////////////////////////////////////////////// End Register Product -->
-      <!-- scorll down elemnt left bttom has position -->
+      <!-- End intro section -->
+
+      <!--Start Arrwo scroll down -->
       <div class="scroll-down"></div>
+      <!--End Arrwo scroll down -->
+
+      <!--Start right corner registed -->
+      <div class="right-corner-content">
+        <div class="document-img">
+          <img src="../images/document.svg" alt="" />
+        </div>
+        <div class="action-btn">
+          <p class="description-corner-content">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+            pulvinar accumsan tellus, ac blandit est fringilla vel.
+          </p>
+          <button class="primary-btn">register product</button>
+        </div>
+      </div>
+      <!--Start right corner registed -->
     </header>
     <!--///////////////////////////////////////////////////////////////////////////////////////////////// End Hero section -->
     <main>
-      <!--///////////////////////////////////////////////////////////////////////////////////////////////// Start About section -->
+      <!--/////////////////////////////////////////////////////////////////////////////////////////////// Start About section -->
       <section class="about container">
+        <img class="circle" src="./images/circle.svg" alt="" />
         <div class="about-text">
           <p class="head-about">About</p>
           <p class="title-about">
@@ -185,11 +134,21 @@
         </div>
         <div class="img-about">
           <img class="img-src-about" src="./images/img-about.jpg" alt="" />
+          <img
+            class="logo-about-img"
+            src="./images/logo-about-img.svg"
+            alt=""
+          />
         </div>
       </section>
-      <section class="registered-products container text-center">
+      <section class="registered-products text-center">
+        <img
+          class="bg-registered-section"
+          src="./images/bg-registered-section.svg"
+          alt=""
+        />
         <h1 class="primary-heading">Registered <span>Products</span></h1>
-        <p class="registered-description">
+        <p class="registered-description container">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
           porro dolores velit quia sint voluptate, iusto corporis aperiam libero
           praesentium? Id recusandae ducimus laudantium quam beatae nemo
@@ -200,12 +159,14 @@
         <button class="primary-btn">VIEW PRODUCTS</button>
         <span class="bg-transpernt"></span>
       </section>
-      <!--///////////////////////////////////////////////////////////////////////////////////////////////// End About section -->
+      <!--/////////////////////////////////////////////////////////////////////////////////////////////// End About section -->
+
+      <!--/////////////////////////////////////////////////////////////////////////////////////////////// Start News Events section -->
       <section class="news-events text-light">
-        <div class="overlay-news"></div>
+        <img class="half-circle" src="./images/half-circle.svg" alt="" />
         <div class="slide-container swiper container">
           <h1 class="news-head text-center">News <span>& Events</span></h1>
-          <div class="slide-content">
+          <div class="slide-content row">
             <div class="card-wrapper swiper-wrapper">
               <!--  -->
               <div class="card swiper-slide text-light">
@@ -232,7 +193,7 @@
                   </p>
                   <button class="secondary-btn secondary-btn-news">
                     <a href="#">READ MORE</a>
-                    <img src="./images/arrow-forward.svg" alt="" />
+                    <img src="./images/arrow-forward-white.svg" alt="" />
                   </button>
                 </div>
               </div>
@@ -262,7 +223,7 @@
                   </p>
                   <button class="secondary-btn secondary-btn-news">
                     <a href="#">READ MORE</a>
-                    <img src="./images/arrow-forward.svg" alt="" />
+                    <img src="./images/arrow-forward-white.svg" alt="" />
                   </button>
                 </div>
               </div>
@@ -292,7 +253,7 @@
                   </p>
                   <button class="secondary-btn secondary-btn-news">
                     <a href="#">READ MORE</a>
-                    <img src="./images/arrow-forward.svg" alt="" />
+                    <img src="./images/arrow-forward-white.svg" alt="" />
                   </button>
                 </div>
               </div>
@@ -322,20 +283,21 @@
                   </p>
                   <button class="secondary-btn secondary-btn-news">
                     <a href="#">READ MORE</a>
-                    <img src="./images/arrow-forward.svg" alt="" />
+                    <img src="./images/arrow-forward-white.svg" alt="" />
                   </button>
                 </div>
               </div>
               <!--  -->
             </div>
           </div>
-
           <div class="swiper-button-next swiper-navBtn text-light ms-5"></div>
           <div class="swiper-button-prev swiper-navBtn text-light"></div>
           <div class="swiper-pagination text-white"></div>
         </div>
       </section>
-      <!--///////////////////////////////////////////////////////////////////////////////////////////////// Start sucss Section -->
+      <!--/////////////////////////////////////////////////////////////////////////////////////////////// Start News Events section -->
+
+      <!--/////////////////////////////////////////////////////////////////////////////////////////////// Start sucss Section -->
       <section class="sucss container">
         <div class="left">
           <h2 class="primary-heading">
@@ -343,10 +305,9 @@
             <span>Case studies</span>
           </h2>
           <button class="secondary-btn">
-            ALL CASES <img src="./images/Icon-plus.svg" alt="" />
+            ALL CASES <img src="./images/Icon-plus-black.svg" alt="" />
           </button>
         </div>
-
         <div class="right">
           <div class="slideshow-container">
             <!--  -->
@@ -373,14 +334,19 @@
             <div class="mySlides">
               <h1 class="fw-bold">Lorem ipsum dolor sit amet. 2</h1>
               <p class="desc-sucss">
-                sit amet consectetur adipisicing elit. Optio consequuntur,
-                doloremque, quibusdam laborum iure mollitia quas quos voluptatum
-                earum incidunt odit, ad laudantium expedita at fuga quae est
-                maiores voluptas?Lorem, ipsum dolor
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
+                placeat minima voluptatibus mollitia rem non ipsum molestias,
+                perspiciatis eligendi accusantium excepturi inventore id,
+                dolorum cumque illo autem dignissimos, magni molestiae! Lorem
+                ipsum dolor sit amet consectetur adipisicing elit. Accusamus,
+                impedit. Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Ipsam, ea?
               </p>
               <div class="footer-slide">
-                <button class="secondary-btn">READ MORE</button>
-                <img src="./images/img-sucss3.jpg" />
+                <button class="secondary-btn">
+                  READ MORE <img src="./images//arrow-forward.svg" alt="" />
+                </button>
+                <img src="./images/img-sucss.jpg" />
               </div>
             </div>
             <!--  -->
@@ -388,17 +354,19 @@
             <div class="mySlides">
               <h1 class="fw-bold">Lorem ipsum dolor sit amet. 3</h1>
               <p class="desc-sucss">
-                Labore placeat minima voluptatibus mollitia rem non ipsum
-                molestias, perspiciatis eligendi accusantium excepturi inventore
-                id, dolorum cumque illo autem dignissimos, magni molestiae!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Accusamus, impedit. Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Ipsam, ea?Lorem ipsum dolor sit amet
-                consectetur adipisicing elit.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
+                placeat minima voluptatibus mollitia rem non ipsum molestias,
+                perspiciatis eligendi accusantium excepturi inventore id,
+                dolorum cumque illo autem dignissimos, magni molestiae! Lorem
+                ipsum dolor sit amet consectetur adipisicing elit. Accusamus,
+                impedit. Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Ipsam, ea?
               </p>
               <div class="footer-slide">
-                <button class="secondary-btn">READ MORE</button>
-                <img src="./images/img-sucss2.jpg" />
+                <button class="secondary-btn">
+                  READ MORE <img src="./images//arrow-forward.svg" alt="" />
+                </button>
+                <img src="./images/img-sucss.jpg" />
               </div>
             </div>
             <!--  -->
@@ -406,17 +374,19 @@
             <div class="mySlides">
               <h1 class="fw-bold">Lorem ipsum dolor sit amet. 4</h1>
               <p class="desc-sucss">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
+                placeat minima voluptatibus mollitia rem non ipsum molestias,
+                perspiciatis eligendi accusantium excepturi inventore id,
                 dolorum cumque illo autem dignissimos, magni molestiae! Lorem
                 ipsum dolor sit amet consectetur adipisicing elit. Accusamus,
                 impedit. Lorem ipsum dolor sit amet consectetur adipisicing
-                elit. Ipsam, ea?Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Labore placeat minima voluptatibus mollitia
-                rem non ipsum molestias, perspiciatis eligendi accusantium
-                excepturi inventore id,
+                elit. Ipsam, ea?
               </p>
               <div class="footer-slide">
-                <button class="secondary-btn">READ MORE</button>
-                <img src="./images/img-sucss3.jpg" />
+                <button class="secondary-btn">
+                  READ MORE <img src="./images//arrow-forward.svg" alt="" />
+                </button>
+                <img src="./images/img-sucss.jpg" />
               </div>
             </div>
             <!--  -->
@@ -426,8 +396,9 @@
           </div>
         </div>
       </section>
-      <!--///////////////////////////////////////////////////////////////////////////////////////////////// End sucss Section -->
-      <!--///////////////////////////////////////////////////////////////////////////////////////////////// Start platform Section -->
+      <!--/////////////////////////////////////////////////////////////////////////////////////////////// End sucss Section -->
+
+      <!--/////////////////////////////////////////////////////////////////////////////////////////////// Start platform caruosel Section -->
       <section class="platform">
         <h3 class="primary-heading text-center">
           Platform <span>Sponsars</span>
@@ -435,8 +406,8 @@
         <div class="text-center my-3">
           <div class="row mx-auto my-auto justify-content-center">
             <div
-              id="recipeCarousel"
               class="carousel slide"
+              id="recipeCarousel"
               data-bs-ride="carousel"
             >
               <div class="carousel-inner" role="listbox">
@@ -615,33 +586,34 @@
           </p>
         </div>
       </section>
-      <!--///////////////////////////////////////////////////////////////////////////////////////////////// End platform Section -->
+      <!--/////////////////////////////////////////////////////////////////////////////////////////////// End platform caruosel Section -->
     </main>
-    <footer class="footer">
-      <section class="">
+    <!--/////////////////////////////////////////////////////////////////////////////////////////////// Start footer Section -->
+    <section class="footer-section">
+      <footer class="footer">
         <!-- Footer -->
-        <div class=" text-white text-right text-md-start">
+        <div class="text-white text-right text-md-start">
           <!-- Grid container -->
           <div class="container p-4">
             <!--Grid row-->
             <div class="footer-content row">
               <!--Grid column-->
               <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-                <div class="logos d-flex gap-5 footer-logos">
+                <div class="logo footer-logo">
                   <div class="logo-text">
-                    LOGO<br />
-                    <span class="spcial-text">
-                      <span>H</span>
-                      <span>E</span>
-                      <span>R</span>
-                      <span>E</span>
-                    </span>
+                    <div class="lo">LOGO</div>
+                    <div class="go">
+                      <span>h</span>
+                      <span>e</span>
+                      <span>r</span>
+                      <span>e</span>
+                    </div>
                   </div>
-                  <div class="logo-icon">
+                  <div class="logo-img">
                     <img src="./images/logo.svg" alt="" />
                   </div>
                 </div>
-                <p>
+                <p class="logo-footer-descrption">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
                   pulvinar accumsan tellus, ac blandit est fringilla vel.
                 </p>
@@ -655,16 +627,36 @@
                     <h5 class="text-uppercase">Quick Links</h5>
                   </li>
                   <li>
-                    <img src="./images/Ellipse 2.png" alt=""><a href="#!" class="text-white"> products</a>
+                    <img src="./images/Ellipse 2.png" alt="" /><a
+                      href="#!"
+                      class="text-white"
+                    >
+                      products</a
+                    >
                   </li>
                   <li>
-                    <img src="./images/Ellipse 2.png" alt=""><a href="#!" class="text-white"> business development</a>
+                    <img src="./images/Ellipse 2.png" alt="" /><a
+                      href="#!"
+                      class="text-white"
+                    >
+                      business development</a
+                    >
                   </li>
                   <li>
-                    <img src="./images/Ellipse 2.png" alt=""><a href="#!" class="text-white"> Complaint</a>
+                    <img src="./images/Ellipse 2.png" alt="" /><a
+                      href="#!"
+                      class="text-white"
+                    >
+                      Complaint</a
+                    >
                   </li>
                   <li>
-                    <img src="./images/Ellipse 2.png" alt=""><a href="#!" class="text-white"> FAQ and Inquiries</a>
+                    <img src="./images/Ellipse 2.png" alt="" /><a
+                      href="#!"
+                      class="text-white"
+                    >
+                      FAQ and Inquiries</a
+                    >
                   </li>
                 </ul>
               </div>
@@ -678,9 +670,7 @@
                   </li>
                   <li>
                     <img src="./images/Icon awesome-phone-alt.svg" alt="" />
-                    <a
-                      href="#!"
-                      class="text-white"
+                    <a href="#!" class="text-white"
                       >+022 3415154 / 0114 66 86 441</a
                     >
                   </li>
@@ -708,7 +698,7 @@
                       www.eos.ord.eg/en</a
                     >
                   </li>
-                  <div class="social-icons-footer d-flex gap-5 ">
+                  <div class="social-icons-footer d-flex gap-5">
                     <img src="./images/facebook.svg" alt="" />
                     <img src="./images/twitter.svg" alt="" />
                     <img src="./images/linkedin.svg" alt="" />
@@ -729,30 +719,35 @@
             <p class="copyright-text">
               Copyright 2022 UNIDO Motors. All Rights Reserved.
             </p>
-
           </div>
           <!-- Copyright -->
         </div>
         <!-- Footer -->
-      </section>
-    </footer>
-    <!-- inoin icons librery -->
+      </footer>
+    </section>
+    <!--/////////////////////////////////////////////////////////////////////////////////////////////// End footer Section -->
+
+    <!--Start ionc icons library -->
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
     ></script>
-    <!--End inoin icons librery -->
+    <!--End inoin icons library -->
 
-    <!-- bootstrap files -->
+    <!--Start bootstrap library files for javascript-->
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/bootstrap.bundle.min.js.map"></script>
-    <!--End bootstrap files -->
+    <!--End bootstrap library files for javascript -->
 
     <!-- Swiper JS -->
     <script src="js/swiper-bundle.min.js"></script>
     <!--End Swiper JS -->
 
-    <!-- JavaScript -->
+    <!-- Start fonts awesome-->
+    <script src="./js/all.min.js"></script>
+    <!-- End fonts awesome-->
+
+    <!--Start JavaScript -->
     <script src="js/script.js"></script>
     <!--End JavaScript -->
   </body>
