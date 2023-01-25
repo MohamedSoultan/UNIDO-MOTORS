@@ -107,7 +107,7 @@
   .hero-section {
     padding: 10px 24px 0;
     width: 100%;
-    max-height: 75vh;
+    max-height: 100vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
       url(../images/mobile-images/hero-img-mobile.png);
   }
@@ -255,7 +255,7 @@
   .nav-container.active .top-nav {
     margin: 0 24px;
     position: absolute;
-    bottom: 125px;
+    bottom: 190px;
   }
   .nav-container.active .bottom-nav {
     margin: 0 24px;
@@ -309,8 +309,8 @@
   }
   .circle {
     height: 300px;
-    left: 35%;
-    top: 114%;
+    left: 107px;
+    top: 1092px;
   }
   .half-circle {
     top: -250px;
@@ -321,8 +321,8 @@
   }
   .logo-about-img {
     height: 100px;
-    right: 13%;
-    bottom: -61%;
+    right: 58px;
+    bottom: -722px;
     z-index: 2;
   }
   .registered-products {
