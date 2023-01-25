@@ -11,16 +11,15 @@
   }
   .about-text {
     grid-row: 2;
-    margin-top: 4.8rem;
+    margin-top: 48px;
     padding: 0 2.4rem;
   }
 
   .sucss {
     grid-template-columns: 1fr;
-    margin: 0 2.4rem;
   }
   .mySlides {
-    padding: 2.4rem;
+    padding: 24px;
   }
   .primary-heading {
     font-size: 4.2rem;
@@ -82,14 +81,12 @@
     display: block;
   }
   .platform {
-    margin: 48px;
+    margin: 24px;
   }
   .shadow-btn {
     box-shadow: none;
   }
-  .doucment-section {
-    padding: 48px;
-  }
+
 }
 /* medium and up screens */
 @media (min-width: 768px) {
@@ -110,7 +107,49 @@
   }
   .hero-section {
     padding: 10px 24px 0;
+    width: 100%;
     max-height: 75vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url(../images/mobile-images/hero-img-mobile.png);
+  }
+  .news-events {
+    padding: 200px 0px 100px;
+    background-image: linear-gradient(
+        rgba(55, 55, 55, 0.8),
+        rgba(55, 55, 55, 0.8)
+      ),
+      url(../images/mobile-images/bg-news-mobile.png);
+  }
+  .news-head {
+    margin-bottom: 64px;
+  }
+  .left-sucss {
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .footer-slide {
+    display: block;
+  }
+  .btn-slider-sucss {
+    margin-bottom: 24px !important;
+  }
+  .prev,
+  .next {
+    top: -100px;
+  }
+  .prev {
+    left: 10px;
+
+  }
+  .next {
+    left: 100px;
+
+  }
+  .footer {
+    background-image: linear-gradient(#0099cf, rgba(0, 152, 207, 0.5)),
+      url(../images/mobile-images/bg-footer-mobile.png);
   }
   .primary-btn {
     font-size: 2rem;
@@ -156,7 +195,7 @@
     padding: 6px 12px;
   }
   .advanced-serachbar {
-    right: 100px;
+    width: 105%;
   }
   .list-links,
   .nav-languages,
@@ -195,9 +234,6 @@
     top: -250px;
     height: 400px;
   }
-  .news-events {
-    padding: 200px 0px;
-  }
   .img-src-about {
     padding: 0 24px;
   }
@@ -210,9 +246,12 @@
   .registered-products {
     padding: 150px 24px;
   }
-  .doucment-section {
+  .platform {
     padding: 24px;
-    margin: 0 24px;
+  }
+  .doucment-section {
+    padding: 48px 24px 24px;
+
   }
   .footer {
     padding: 0;

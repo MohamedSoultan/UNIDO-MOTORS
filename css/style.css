@@ -412,8 +412,13 @@
   grid-template-columns: repeat(2, 1fr);
   padding: 50px 0;
   align-items: center;
+  position: relative;
 }
-
+.Icon-quote {
+  position: absolute;
+  top: -42px;
+  right: 24px;
+}
 /* Slideshow container */
 .slideshow-container {
   max-width: 800px;
@@ -427,29 +432,33 @@
   transition: var(--transition);
   max-width: 100%;
   height: 100%;
-  padding: 50px;
-  box-shadow: var(--box-shadow);
+  padding: 64px 48px;
+  box-shadow: 0 10px 15px 3px rgb(0, 0, 0, 0.08);
 }
 /* Next & previous buttons */
 .prev,
 .next {
   position: absolute;
-  top: -10rem;
-  right: 0;
-  width: 50px;
-  padding: 20px;
-  color: var(--main-color);
+  top: -0;
+  right: 10px;
+  width: 60px;
+  height: 60px;
+
+  color: var(--main-hover);
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 20px;
   transition: var(--transition);
   text-align: center;
   background: none;
-  border: 1px solid var(--main-color);
+  border: 1px solid var(--main-hover);
   cursor: pointer;
 }
 /* Position the "next button" to the right */
 .prev {
-  right: 60px;
+  right: -85px;
+}
+.next {
+  right: -150px;
 }
 /* On hover, add a main background color with a little bit see-through */
 .prev:hover,
@@ -459,14 +468,13 @@
 }
 .desc-sucss {
   font-size: var(--fs-desc);
-  margin-bottom: 2.4rem;
+  margin: 24px 0 32px 0;
 }
 .footer-slide {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 /*//////////////////////////////////////////////////////////////////////////////////////////////////  End sucssful Section */
 .platform {
   margin: 64px;
