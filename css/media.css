@@ -81,7 +81,7 @@
     display: block;
   }
   .platform {
-    margin: 24px;
+    margin: 0;
   }
   .shadow-btn {
     box-shadow: none;
@@ -106,8 +106,8 @@
   }
   .hero-section {
     padding: 10px 24px 0;
-    width: 100%;
-    max-height: 100vh;
+    max-width: 100%;
+    max-height: 90vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
       url(../images/mobile-images/hero-img-mobile.png);
   }
@@ -123,6 +123,11 @@
   .news-head {
     margin-bottom: 64px;
   }
+  .swiper-button-next:after,
+  .swiper-button-prev:after {
+    display: none;
+  }
+
   /* End News section */
 
   .left-sucss {
@@ -157,7 +162,13 @@
   .primary-btn {
     font-size: 2rem;
   }
+  /* Start products section */
 
+  .products-section {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 250px;
+  }
   .bg-img-products {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
       url(../images/mobile-images/bg-products-mobile.png);
@@ -167,7 +178,6 @@
   .below-header {
     margin: 24px;
   }
-  /* End products section */
   .left-products {
     margin: 24px;
   }
@@ -177,7 +187,7 @@
     padding: 12px 24px;
   }
   .scroll-btn-table {
-    top: 160%;
+    top: 185em;
   }
   .table-products {
     width: 120%;
@@ -200,18 +210,26 @@
     margin: 0;
     padding: 8px 10px;
   }
-  .products-section {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 250px;
+  /* Start sucss section */
+  /* End sucss section */
+  .right-sucss {
+    margin: 0;
+    padding: 12px;
   }
-  /* Start products section */
+  .mySlides {
+    padding: 70px 24px;
+  }
+  /* End products section */
+
+  /* Start hero section */
   .header-container {
     width: 110%;
     margin: 85px 8px;
   }
   .hero-title {
     font-size: 4.8rem;
+    font-weight: 900;
+    letter-spacing: 1px;
   }
   .hero-description {
     font-size: 4rem;
@@ -228,6 +246,8 @@
   .advanced-serachbar {
     width: 105%;
   }
+  /* End hero section */
+
   /*Start media Navgation */
   .menu-icon {
     display: block;
@@ -289,7 +309,9 @@
   .list-links a {
     color: #000;
   }
-  /*Start media Navgation */
+  /*End media Navgation */
+
+  /*Start right-corner */
 
   .right-corner-content {
     max-width: 70vw;
@@ -307,10 +329,12 @@
   .bg-registered-section {
     height: 350px;
   }
+  /*End right-corner */
+
   .circle {
     height: 300px;
-    left: 107px;
-    top: 1092px;
+    left: 260px;
+    top: 1115px;
   }
   .half-circle {
     top: -250px;

@@ -74,7 +74,7 @@ html {
   display: flex;
   align-items: center;
   border: none;
-  font-size: var(--fs-desc);
+  font-size: 2rem;
   background: none;
   position: relative;
   padding: 20px 0;
