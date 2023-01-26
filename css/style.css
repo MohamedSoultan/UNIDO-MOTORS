@@ -19,7 +19,7 @@
 .logo {
   display: flex;
   align-items: center;
-  font-size: 2.4rem;
+  font-size: 3.2rem;
 }
 .logo-text {
   border-right: 1px solid #fff;
@@ -525,72 +525,77 @@
 /*/////////////////////////////////////////////// Strt doucemnt section */
 
 /*/////////////////////////////////////////////// Start footer */
-.footer {
-  background-image: linear-gradient(
-      rgba(0, 152, 207, 0.96),
-      rgba(0, 152, 207, 0.96)
-    ),
-    url(../images/bg-footer.jpg);
-  font-size: var(--fs-desc);
+.footer-section {
+  background-image:linear-gradient(rgba(0, 152, 207, 0.950),rgba(0, 152, 207, 0.950)), url(../images/bg-footer.jpg);
   background-size: cover;
-  background-repeat: no-repeat;
+  padding: 64px 0 0;
+  color: #fff;
+  background-color: var(--main-hover);
+  font-size: 1.8rem;
 }
-.footer a {
-  text-decoration: none;
+.logo-footer {
+  margin-left: 57px;
+  margin-bottom: 20px;
 }
-.footer-logo {
-  margin: 0 0 48px 64px;
+.logo-text-footer {
+  border: none;
 }
-.footer h5 {
-  font-size: 2.4rem;
-  position: relative;
-  margin: 0 0 3.2rem 2.4rem;
+.description-footer {
+  font-size: 18px;
+  width: 80%;
 }
-.footer h5::before {
-  content: "";
-  position: absolute;
-  width: 6px;
-  height: 26px;
-  top: 17%;
-  left: -8%;
-  background-color: var(--main-color);
+.title-links {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
 }
-.footer h5::before:last-child {
-  left: -18% !important;
+.title-links h5 {
+  font-size: 4.8rem;
+  margin-left: 23px;
+  font-weight: 400;
 }
-.quick-links {
-  position: relative;
-}
-.quick-links li a {
-  position: relative;
-}
-.quick-links img {
-  position: absolute;
-  left: -25px;
-}
-.footer-content {
-  padding: 5rem 0;
-}
-.footer-content ul {
+.footer_menu {
   display: flex;
   flex-direction: column;
-  gap: 0.4rem;
+  gap: 4px;
 }
-.footer-logos {
-  margin: 0 0 4.8rem 5.4rem;
+
+.footer_menu a {
+  text-transform: uppercase;
+  font-size: 21px;
+  color: #fff;
+  text-decoration: none;
 }
-.footer-logos .logo-text {
-  border: none !important;
+.quick-links li {
+  font-weight: 500;
 }
-.social-icons-footer {
-  height: 20px;
+.contact-us {
+  font-family: inherit;
 }
-.copyright {
+.footer_menu li {
   display: flex;
-  justify-content: start;
-  color: #6adcff;
-  font-weight: 600;
+  align-items: center;
+  gap: 23px;
 }
+
+.end-footer{
+  margin-top: 64px;
+}
+.copywrite-text {
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--main-color);
+  font-size: 18px;
+}
+.social-links {
+  display: flex;
+  height: 18px;
+  gap: 48px;
+}
+.social-links a {
+  text-decoration: none;
+}
+
 /*/////////////////////////////////////////////// End footer */
 
 /* ///////////////////////////////////////////////////////////////////////////////  START ANOTHER SECTIONS  ////////////////////////////////////////////////////////////////// */

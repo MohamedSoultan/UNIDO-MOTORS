@@ -36,19 +36,12 @@ li {
 html {
   font-size: 62.5%;
 }
-.half-circle,
-.circle {
-  position: absolute;
-}
 .half-circle {
+  position: absolute;
   top: -285px;
   left: -200px;
 }
-.circle {
-  right: 115px;
-  top: 980px;
-  z-index: 1;
-}
+
 /* Golbal Role */
 
 /* Start primary button */
