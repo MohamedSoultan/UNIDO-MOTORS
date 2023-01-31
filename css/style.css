@@ -486,7 +486,10 @@
 .platform_slider {
   position: relative;
 }
-
+.slider_container_platform {
+  max-width: 1500px;
+  margin: 0 auto;
+}
 .btns-platfrom button {
   display: flex;
   justify-content: center;
@@ -498,6 +501,16 @@
   height: 24px;
   cursor: pointer;
   transition: all 0.3s;
+  position: absolute;
+  top: 30%;
+}
+#btn_prev_platfrom {
+  left: 45px;
+}
+#btn_next_platfrom{
+  right: 45px;
+}
+.btn_platform {
 }
 .description_card_platform {
   font-size: 18px;

@@ -200,7 +200,12 @@
     width: 105%;
   }
   /* End hero section */
-
+  #btn_prev_platfrom {
+    left: -23px;
+  }
+  #btn_next_platfrom {
+    right: -23px;
+  }
   /*Start media Navgation */
   .src-logo {
     content: url(../images/mobile-images/logo-mobile.png);
