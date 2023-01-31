@@ -12,6 +12,9 @@
     <link type="text/css" rel="stylesheet" href="css/global.css" />
     <link type="text/css" rel="stylesheet" href="css/media.css" />
     <!-- End css styleing files  for css-->
+    <!-- Start css splide library -->
+    <link rel="stylesheet" href="./css/splide.min.css" />
+    <!-- End css splide library -->
     <!--Start Swiper library file for css-->
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <!--End Swiper library file  for css-->
@@ -32,7 +35,7 @@
             </div>
           </div>
           <div class="logo-img">
-            <img src="./images/logo.svg" alt="" />
+            <img class="src-logo" src="./images/logo.svg" alt="" />
           </div>
         </div>
         <div class="menu-icon">
@@ -43,12 +46,24 @@
         <div class="navigation">
           <div class="top-nav">
             <div class="nav-login">
-              <img src="./images/Icon-user.svg" alt="" />
+              <img class="login_user" src="./images/Icon-user.svg" alt="" />
               <a href="#">login</a>
             </div>
             <div class="nav-languages">
               <div><a href="#">العربية</a></div>
-              <div><a href="#">EN</a></div>
+              <div><a class="lang-en" href="#">EN</a></div>
+            </div>
+            <div class="social-links_menu">
+              <a href="#"><img src="./images/mobile-images/facebook.svg" /></a>
+              <a href="#"
+                ><img src="./images/mobile-images/twitter.svg" alt=""
+              /></a>
+              <a href="#"
+                ><img src="./images/mobile-images/linkdin.svg" alt=""
+              /></a>
+              <a href="#"
+                ><img src="./images/mobile-images/youtube.svg" alt=""
+              /></a>
             </div>
           </div>
           <div class="bottom-nav">
@@ -57,15 +72,23 @@
               <li class="list-item">
                 <a href="./sections/products.html">products</a>
               </li>
-              <li class="list-item"><a href="#">Business development</a></li>
-              <li class="list-item"><a href="#">Awareness & Knowledge</a></li>
+              <li class="list-item">
+                <a href="../sections/awareness_knowledge"
+                  >Business development</a
+                >
+              </li>
+              <li class="list-item">
+                <a href="./sections/awareness_knowledge.html"
+                  >Awareness & Knowledge</a
+                >
+              </li>
               <li class="list-item"><a href="#">Complaint</a></li>
               <li class="list-item"><a href="#">FAQ and Inquiries</a></li>
             </ul>
           </div>
         </div>
       </nav>
-      <!-- Start intro section -->
+      <!-- Start intro text -->
       <div class="header-container container">
         <div class="hero-text-container">
           <h1 class="hero-title">UNIDO</h1>
@@ -88,7 +111,7 @@
           >
         </div>
       </div>
-      <!-- End intro section -->
+      <!-- End intro text -->
 
       <!--Start Arrwo scroll down -->
       <div class="scroll-down"></div>
@@ -133,14 +156,11 @@
               <img src="./images/arrow-forward.svg" alt="" /></button
           ></a>
         </div>
-        <div class="img-about">
-
-          <img class="img-src-about" src="./images/img-about.jpg" alt="" />
-          <img
-            class="logo-about-img"
-            src="./images/logo-about-img.svg"
-            alt=""
-          />
+        <div class="images_about">
+          <div class="img-about">
+            <img class="logo-about-img" src="./images/logo-about-img.svg" />
+            <img class="img-src-about" src="./images/img-about.jpg" alt="" />
+          </div>
         </div>
       </section>
       <section class="registered-products text-center">
@@ -329,7 +349,7 @@
                 <button class="secondary-btn btn-slider-sucss">
                   READ MORE <img src="./images//arrow-forward.svg" alt="" />
                 </button>
-                <img src="./images/img-sucss.jpg" />
+                <img class="img-car_footer" src="./images/img-sucss.jpg" />
               </div>
             </div>
             <!--  -->
@@ -422,132 +442,51 @@
       <!--/////////////////////////////////////////////////////////////////////////////////////////////// End sucss Section -->
 
       <!--/////////////////////////////////////////////////////////////////////////////////////////////// Start platform caruosel Section -->
-      <section class="platform">
+      <section class="platform ">
         <h3 class="primary-heading text-center">
           Platform <span>Sponsars</span>
         </h3>
-        <div class="text-center my-3">
-          <div class="row mx-auto my-auto justify-content-center">
-            <div
-              class="carousel slide"
-              id="recipeCarousel"
-              data-bs-ride="carousel"
-            >
-              <div class="carousel-inner" role="listbox">
-                <div class="carousel-item active">
-                  <div class="col">
-                    <div class="box-platform">
-                      <div class="card-img">
-                        <img
-                          src="./images/product-platform.svg"
-                          class="img-fluid"
-                        />
-                      </div>
-                    </div>
-                    <p class="descriptopn-box-platform fw-bold mt-3">
-                      Lorem ipsum dolor sit amet.
-                    </p>
-                  </div>
+        <div
+          class="splide platform_slider"
+          aria-label="Splide Basic HTML Example"
+        >
+          <div class="splide__track ">
+            <ul class="splide__list">
+              <li class="splide__slide ">
+                <div>
+                  <img src="./images/product-platform.svg" alt="" />
+                  <p class="description_card_platform">Lorem ipsum dolor sit amet</p>
                 </div>
-                <div class="carousel-item">
-                  <div class="col">
-                    <div class="box-platform">
-                      <div class="card-img">
-                        <img
-                          src="./images/product-platform.svg"
-                          class="img-fluid"
-                        />
-                      </div>
-                    </div>
-                    <p class="descriptopn-box-platform fw-bold mt-3">
-                      Lorem ipsum dolor sit amet.
-                    </p>
-                  </div>
+              </li>
+              <li class="splide__slide">
+                <div>
+                  <img src="./images/product-platform.svg" alt="" />
+                  <p class="description_card_platform">Lorem ipsum dolor sit amet</p>
                 </div>
-                <div class="carousel-item">
-                  <div class="col">
-                    <div class="box-platform">
-                      <div class="card-img">
-                        <img
-                          src="./images/product-platform.svg"
-                          class="img-fluid"
-                        />
-                      </div>
-                    </div>
-                    <p class="descriptopn-box-platform fw-bold mt-3">
-                      Lorem ipsum dolor sit amet.
-                    </p>
-                  </div>
+              </li>
+              <li class="splide__slide">
+                <div>
+                  <img src="./images/product-platform.svg" alt="" />
+                  <p class="description_card_platform">Lorem ipsum dolor sit amet</p>
                 </div>
-                <div class="carousel-item">
-                  <div class="col">
-                    <div class="box-platform">
-                      <div class="card-img">
-                        <img
-                          src="./images/product-platform.svg"
-                          class="img-fluid"
-                        />
-                      </div>
-                    </div>
-                    <p class="descriptopn-box-platform fw-bold mt-3">
-                      Lorem ipsum dolor sit amet.
-                    </p>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="col">
-                    <div class="box-platform">
-                      <div class="card-img">
-                        <img
-                          src="./images/product-platform.svg"
-                          class="img-fluid"
-                        />
-                      </div>
-                    </div>
-                    <p class="descriptopn-box-platform fw-bold mt-3">
-                      Lorem ipsum dolor sit amet.
-                    </p>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="col">
-                    <div class="box-platform">
-                      <div class="card-img">
-                        <img
-                          src="./images/product-platform.svg"
-                          class="img-fluid"
-                        />
-                      </div>
-                    </div>
-                    <p class="descriptopn-box-platform fw-bold mt-3">
-                      Lorem ipsum dolor sit amet.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <a
-                class="carousel-control-prev bg-transparent w-aut"
-                href="#recipeCarousel"
-                role="button"
-                data-bs-slide="prev"
-              >
-                <span
-                  class="carousel-control-prev-icon shadow-btn"
-                  aria-hidden="true"
-                ></span>
-              </a>
-              <a
-                class="carousel-control-next bg-transparent w-aut"
-                href="#recipeCarousel"
-                role="button"
-                data-bs-slide="next"
-              >
-                <span
-                  class="carousel-control-next-icon shadow-btn"
-                  aria-hidden="true"
-                ></span>
-              </a>
-            </div>
+              </li>
+            </ul>
+          </div>
+          <div class="splide__arrows btns-platfrom">
+            <button class="splide__arrow splide__arrow--prev btn-prev_platfrom">
+              <img
+                class="svg_icon-platform"
+                src="../images/arrow-prev.svg"
+                alt=""
+              />
+            </button>
+            <button class="splide__arrow splide__arrow--next btn-next_platfrom">
+              <img
+                class="svg_icon-platform"
+                src="../images/arrow-right.svg"
+                alt=""
+              />
+            </button>
           </div>
         </div>
         <div class="doucment-section container">
@@ -616,9 +555,9 @@
       <div class="container">
         <div class="row">
           <!-- Single Widget-->
-          <div class="first_col col-12 col-sm-6 col-lg-6  ">
+          <div class="first_col col-12 col-sm-6 col-lg-6">
             <!--Start Footer Logo-->
-            <div class="logo logo-footer ">
+            <div class="logo logo-footer">
               <div class="logo-text logo-text-footer">
                 <div class="lo">LOGO</div>
                 <div class="go">
@@ -639,8 +578,8 @@
             <!--End Footer Logo-->
           </div>
           <!--Start Quick Links-->
-          <div class="col-12 col-sm-6 col-lg footer_col_section ">
-            <div class="title-links d-flex align-center ">
+          <div class="col-12 col-sm-6 col-lg footer_col_section">
+            <div class="title-links d-flex align-center">
               <img src="./images/blue-line-footer.svg" alt="" />
               <h5 class="quick-links-header">Quick links</h5>
             </div>
@@ -733,8 +672,12 @@
     <script src="./js/all.min.js"></script>
     <!-- End fonts awesome-->
 
+    <!-- Start css splide library -->
+    <script src="./js/splide.js"></script>
+    <!-- End css splide library -->
+
     <!--Start JavaScript -->
-    <script src="js/script.js"></script>
+    <script src="./js/script.js"></script>
     <!--End JavaScript -->
   </body>
 </html>

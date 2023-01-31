@@ -26,6 +26,9 @@ ul,
 ol {
   padding: 0;
 }
+*:focus {
+  outline: rgba(0, 185, 227, 0.5);
+}
 @font-face {
   font-family: "SEGOEUI";
   src: url(/Fonts/SEGOEUI.TTF);
@@ -179,3 +182,8 @@ html {
   font-size: var(--fs-desc);
 }
 /* End starter-sections */
+
+body {
+}
+.container {
+}

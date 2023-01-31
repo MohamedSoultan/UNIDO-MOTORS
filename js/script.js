@@ -1,6 +1,7 @@
 // burger icon
 let menuIcon = document.querySelector(".menu-icon");
 let navContainer = document.querySelector(".nav-container");
+
 menuIcon.addEventListener("click", () => {
   navContainer.classList.toggle("active");
   menuIcon.classList.toggle("active");
@@ -79,19 +80,89 @@ function showSlides(n) {
   }
   slides[slideIndex - 1].style.display = "block";
 }
-// platform section
-let items = document.querySelectorAll(".carousel .carousel-item");
+// platform
 
-items.forEach((el) => {
-  const minPerSlide = 6;
-  let next = el.nextElementSibling;
-  for (var i = 1; i < minPerSlide; i++) {
-    if (!next) {
-      // wrap carousel by using first child
-      next = items[0];
-    }
-    let cloneChild = next.cloneNode(true);
-    el.appendChild(cloneChild.children[0]);
-    next = next.nextElementSibling;
-  }
+var platform_slider = new Splide(".platform_slider", {
+  type: "loop",
+  prev: "splide__arrow--prev .btn-n",
+  next: "splide__arrow--next .btn-r",
+  gap: "1rem",
+  perPage: 6,
+  breakpoints: {
+    576: {
+      perPage: 1,
+      pagination: false,
+    },
+    992: {
+      perPage: 2,
+    },
+    1350: {
+      perPage: 3,
+    },
+  },
 });
+platform_slider.mount();
+// platform
+// awarness
+
+var awarness_guids = new Splide(".awarness_guids", {
+  type: "loop",
+  prev: "splide__arrow--prev .btn-n",
+  next: "splide__arrow--next .btn-r",
+  gap: "2rem",
+  perPage: 3,
+  breakpoints: {
+    576: {
+      perPage: 1,
+      pagination: false,
+    },
+    992: {
+      perPage: 2,
+    },
+    1350: {
+      perPage: 3,
+    },
+  },
+});
+awarness_guids.mount();
+
+var awarness_posts = new Splide(".awarness_posts", {
+  type: "loop",
+  prev: "splide__arrow--prev .btn-n",
+  next: "splide__arrow--next .btn-r",
+  gap: "2rem",
+  perPage: 3,
+  breakpoints: {
+    576: {
+      perPage: 1,
+      pagination: false,
+    },
+    992: {
+      perPage: 2,
+    },
+    1350: {
+      perPage: 3,
+    },
+  },
+});
+awarness_posts.mount();
+
+var awarness_reco = new Splide(".awarness_reco", {
+  type: "loop",
+  prev: "splide__arrow--prev .btn-n",
+  next: "splide__arrow--next .btn-r",
+  gap: "2rem",
+  // padding:"250px",
+  perPage: 2,
+  breakpoints: {
+    992: {
+      perPage: 1,
+    },
+    1350: {
+      perPage: 3,
+    },
+  },
+});
+
+awarness_reco.mount();
+// awarness
