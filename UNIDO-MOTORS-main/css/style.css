@@ -1,0 +1,385 @@
+.overlay {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+/* Start hero section */
+.hero-section {
+  position: relative;
+  background-image: url(../images/hero-img.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 90vh;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 7.5rem 0;
+}
+
+.login-lang {
+  justify-content: end;
+  font-size: var(--default-size);
+}
+.logos {
+  font-size: 3rem;
+  position: relative;
+}
+.logo-text {
+  line-height: 1.2;
+  padding-right: 2rem;
+  border-right: 2px solid #fff;
+  height: 78px;
+}
+.spcial-text {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+}
+.lang {
+  display: flex;
+  gap: 2.4rem;
+}
+.lang button {
+  background: none;
+  border: none;
+  color: #fff;
+  transition: var(--transition);
+  position: relative;
+}
+.lang button:hover {
+  color: var(--main-color);
+}
+.lang button:focus::before,
+.btn-nav:focus::before {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 2px;
+  bottom: 0;
+  background-color: var(--main-color);
+  color: var(--main-color);
+}
+.login {
+  cursor: pointer;
+  transition: var(--transition);
+}
+.login:hover {
+  color: var(--main-color);
+}
+.btn-nav:focus::before {
+  position: absolute;
+  content: "";
+  width: 45px;
+  height: 4px;
+  bottom: -5px;
+  background-color: var(--main-color);
+  color: var(--main-color);
+}
+.hero-nav .ul {
+  border-top: 1.5px solid #aaa;
+  font-size: var(--fs-desc);
+  font-weight: 600;
+}
+.menu {
+  font-size: 4.8rem;
+  display: none;
+}
+.ul {
+  transition: var(--transition);
+}
+.ul button {
+  color: #fff;
+  border: none;
+  background: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: var(--transition);
+}
+.ul button:hover {
+  color: var(--main-color);
+}
+.ul button:focus,
+.lang button:focus {
+  color: var(--main-color);
+}
+
+.hero-heading {
+  font-size: 8.4rem;
+  font-weight: 700;
+  line-height: 0.7;
+}
+.hero-description {
+  font-size: 4.8rem;
+  margin-bottom: 4.8rem;
+}
+.form input {
+  padding: 1.2rem 1rem;
+  width: 300px;
+  outline: none;
+}
+.form {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.hero-btn {
+  background-color: var(--main-color);
+  border: none;
+}
+.hero-icon-search {
+  color: #fff;
+  font-size: 2.4rem;
+  padding: 0.6rem;
+}
+.advanced-btn {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: var(--fs-desc);
+  margin-top: 1.6rem;
+  text-decoration: underline 1px;
+}
+.hero-icon-advanced {
+  font-size: 1.6rem;
+}
+.advanced-btn:focus {
+  outline: none;
+}
+.register-product {
+  color: #000;
+  width: 45vw;
+  height: 40rem;
+  background-color: #fff;
+  bottom: -27rem;
+  right: 0;
+  padding: 5rem;
+  display: flex;
+  gap: 2.4rem;
+}
+.register-product::before {
+  content: "";
+  position: absolute;
+  width: 6rem;
+  height: 20rem;
+  background-color: var(--main-color);
+  left: -6rem;
+  top: 8rem;
+}
+.icon-docs {
+  font-size: 15rem;
+}
+.desc-register {
+  font-size: var(--fs-desc);
+}
+.scroll-down {
+  position: absolute;
+  bottom: -3.5rem;
+  border-left: 2px solid #aaa;
+  height: 10rem;
+  left: 10%;
+}
+.scroll-down::after {
+  content: "";
+  position: absolute;
+  border: 1px solid #aaa;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  bottom: -10px;
+  left: 0%;
+  transform: translateX(-50%);
+  color: #000;
+}
+.scroll-down::before {
+  content: "Scroll Down";
+  position: absolute;
+  bottom: -4rem;
+  width: 7rem;
+  font-size: 1.2rem;
+  color: #000;
+  transform: translateX(-50%);
+}
+
+/* Start About */
+.about {
+  margin-top: 28rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+.about-text {
+  padding: 0 6rem;
+}
+.head-about {
+  font-size: 3.2rem;
+  color: var(--main-color);
+}
+.title-about {
+  font-size: 3.2rem;
+  font-weight: 900;
+  color: #000;
+}
+.description-about {
+  font-size: var(--fs-desc);
+  line-height: 1.5;
+  letter-spacing: 0.7;
+}
+.img-about .img-src-about {
+  width: 100%;
+}
+/* End About */
+
+/* Start registered Products */
+.registered-products {
+  position: relative;
+  max-width: 100%;
+  margin: 0 auto;
+  margin: 20rem 0;
+}
+.registered-description {
+  font-size: var(--fs-desc);
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+/* news-events */
+.news-events {
+  background-image: url(../images/bg-news.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 5rem 0;
+  position: relative;
+  /* -webkit-filter: grayscale(100%);
+ /* Safari 6.0 - 9.0 */
+  /* 
+  filter: grayscale(100%); 
+  */
+}
+.overlay-news {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(36, 34, 34, 0.8);
+}
+.news-head {
+  font-size: 5.4rem;
+  color: var(--main-color);
+}
+.news-head span {
+  font-weight: 600;
+  color: #fff;
+}
+
+.slide-content {
+  margin: 0 12rem;
+  overflow: hidden;
+  padding: 10rem 2rem;
+}
+
+.card {
+  background: transparent;
+  border: none;
+}
+
+.card-image {
+  margin-bottom: 2.4rem;
+}
+
+.card::before {
+  content: "NEW";
+  position: absolute;
+  color: #fff;
+  background-color: var(--main-color);
+  width: 5rem;
+  height: 5rem;
+  top: -1.2rem;
+  left: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.data {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+.title {
+  font-size: var(--fs-desc);
+
+  font-weight: 600;
+}
+.description {
+  font-size: 1.4rem;
+}
+
+.sucss {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 5rem 0;
+  align-items: center;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 800px;
+  position: relative;
+  margin: 15rem auto;
+  transition: all 0.3s;
+
+}
+
+.mySlides {
+  position: relative;
+  transition: all 0.3s;
+  max-width: 100%;
+  height: 500px;
+  padding: 5rem;
+  box-shadow: 0 0 50px 1px rgb(0, 0, 0, 0.2);
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  position: absolute;
+  top: -10rem;
+  right: 0;
+  width: 5rem;
+  padding: 2rem;
+  color: #007bff;
+  font-weight: bold;
+  font-size: 2rem;
+  transition: 0.3s ease;
+  text-align: center;
+  background: none;
+  border: 1px solid #007bff;
+  cursor: pointer;
+}
+/* #007bff */
+
+/* Position the "next button" to the right */
+.prev {
+  right: 6rem;
+}
+/* On hover, add a main background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+.desc-sucss {
+  font-size: var(--fs-desc);
+  margin-bottom: 2.4rem;
+}
+
+.footer-slide {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

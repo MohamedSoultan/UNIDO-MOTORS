@@ -507,10 +507,8 @@
 #btn_prev_platfrom {
   left: 45px;
 }
-#btn_next_platfrom{
+#btn_next_platfrom {
   right: 45px;
-}
-.btn_platform {
 }
 .description_card_platform {
   font-size: 18px;
@@ -859,7 +857,8 @@ td {
   font-size: 25px;
 }
 .description-item_slide {
-  font-size: 18px;
+  margin-top: 24px;
+  font-size: 16px;
   line-height: 1.4;
   letter-spacing: 0.5px;
 }
@@ -867,6 +866,7 @@ td {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 32px;
 }
 .btn_group {
   display: flex;

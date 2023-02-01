@@ -1,0 +1,106 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+:root {
+  --default-size: 2rem;
+  --main-color: #01bcff;
+  --fs-desc: 1.8rem;
+  --transition: all 0.3s;
+}
+li,
+a:any-link {
+  text-decoration: none;
+  list-style: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+.logos,
+ul,
+.login-lang,
+.hero-text {
+  z-index: 10;
+}
+.hero-text,
+.register-product,
+.scroll-down,
+.overlay {
+  position: absolute;
+}
+
+.hero-text {
+  left: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.primary-btn {
+  font-size: 2.4rem;
+  padding: 1rem 3.2rem;
+  background-color: var(--main-color);
+  border: none;
+  color: #fff;
+  margin-top: 5rem;
+  transition: var(--transition);
+}
+.primary-btn:hover {
+  transform: scale(1.2);
+  background-color: transparent;
+  color: var(--main-color);
+  box-shadow: inset 0 0 0 2px var(--main-color);
+}
+
+.secondary-btn {
+  display: flex;
+  align-items: center;
+  border: none;
+  font-size: var(--fs-desc);
+  background: none;
+  position: relative;
+  padding: 2rem 0;
+  color: #000 ;
+  transition: var(--transition);
+}
+.news-events .secondary-btn a,.news-events .secondary-btn a  {
+  color: #fff !important;
+}
+.secondary-btn::after {
+  content: "";
+  position: absolute;
+  width: 30%;
+  height: 4px;
+  background-color: #aaa;
+  bottom: 0;
+  left: 0;
+  transition: var(--transition);
+}
+.secondary-btn:hover {
+  transform: scale(1.2);
+  color: var(--main-color);
+}
+
+.secondary-btn a {
+  color: #000;
+}
+.secondary-btn:hover  a{
+  color: var(--main-color);
+    
+}
+.secondary-btn:hover:after {
+  width: 100%;
+  background-color: var(--main-color);
+}
+
+.primary-heading {
+  font-size: 5.4rem;
+  color: var(--main-color);
+  margin-bottom: 4.8rem;
+}
+.primary-heading span {
+  color: #000;
+  font-weight: 900;
+}
