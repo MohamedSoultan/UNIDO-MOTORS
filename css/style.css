@@ -911,6 +911,9 @@ td {
 .awarness_posts-section {
   background-color: #e6e6e6;
 }
+.card_posts img {
+  width: 100%;
+}
 
 .item_slide-posts {
   background-color: #fff;
@@ -932,8 +935,12 @@ td {
   top: -42px;
   z-index: 200000;
 }
+.description_card-reco {
+  font-size: 14px;
+}
 .footer_card-reco {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+/* media  */

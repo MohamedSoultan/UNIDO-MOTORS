@@ -151,6 +151,7 @@ html {
   align-items: center;
   color: #fff;
   position: relative;
+  text-align: center;
 }
 .nav-sections {
   display: flex;
