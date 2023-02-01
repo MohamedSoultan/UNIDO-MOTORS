@@ -773,7 +773,6 @@ td {
   background-color: #fff;
 }
 
-
 /* End right corner */
 /*/////////////////////////////////////////////// End Products section */
 /*/////////////////////////////////////////////// Start Business Development */
@@ -925,7 +924,7 @@ td {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
-  gap:5rem;
+  gap: 5rem;
 }
 .text_guides2 {
   font-size: 14px;
@@ -975,7 +974,7 @@ td {
 }
 .recom_section_content {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 5rem;
 }
 .card-reco {
@@ -1017,5 +1016,11 @@ td {
   }
   .recom_section_content {
     grid-template-columns: 1fr;
+  }
+  .footer_card-reco {
+    display: block;
+  }
+  .footer_card-reco button {
+    margin-bottom: 24px;
   }
 }
