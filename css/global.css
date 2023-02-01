@@ -86,10 +86,6 @@ html {
 .secondary-btn-news a {
   color: #fff;
 }
-.secondary-btn svg path {
-  color: red;
-  background-color: red;
-}
 .secondary-btn::after {
   content: "";
   position: absolute;
@@ -184,3 +180,47 @@ html {
 }
 /* End starter-sections */
 
+
+/* Start pagination table */
+.pagination-container {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin: 48px 24px 0 0;
+  grid-column: 3/1;
+}
+.pagination {
+  display: inline-block;
+  margin-right: 48px;
+}
+.pagination a {
+  font-size: 18px;
+  color: black;
+  padding: 10px 16px;
+  text-decoration: none;
+  margin: 0 4px;
+}
+.pagination a.active {
+  background-color: #00bbe3;
+  color: white;
+}
+.btn-pagination {
+  text-transform: uppercase;
+  padding: 10px 26px;
+  font-size: 1.6rem;
+  border: 1px solid var(--main-color);
+  background-color: transparent;
+  color: var(--main-color);
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  transition: var(--transition);
+}
+.btn-pagination a {
+  text-decoration: none;
+  color: var(--main-color);
+}
+.btn-pagination:hover {
+  transform: scale(1.2);
+}
+/* End pagination table */

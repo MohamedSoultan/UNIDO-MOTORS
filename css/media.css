@@ -397,18 +397,9 @@
     margin: 0;
     padding: 8px 10px;
   }
+
   /* End products section */
-    /* awarness */
-    .header_slider {
-      display: block;
-      text-align: center;
-    }
-    .btn_group {
-      justify-content: center;
-      margin-top: 12px;
-    }
-  .awarness_sections {
-    padding: 0 24px;
-  }
+
+
 }
 

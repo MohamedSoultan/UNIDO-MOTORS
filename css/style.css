@@ -772,45 +772,7 @@ td {
   cursor: pointer;
   background-color: #fff;
 }
-/* Start pagination table */
-.pagination-container {
-  display: flex;
-  align-items: center;
-  justify-content: end;
-  margin: 48px 24px 0 0;
-  grid-column: 3/1;
-}
-.pagination {
-  display: inline-block;
-  margin-right: 48px;
-}
-.pagination a {
-  font-size: 18px;
-  color: black;
-  padding: 10px 16px;
-  text-decoration: none;
-  margin: 0 4px;
-}
-.pagination a.active {
-  background-color: #00bbe3;
-  color: white;
-}
-.btn-pagination {
-  text-transform: uppercase;
-  padding: 10px 26px;
-  font-size: 1.6rem;
-  border: 1px solid var(--main-color);
-  background-color: transparent;
-  color: var(--main-color);
-  display: flex;
-  gap: 8px;
-  align-items: center;
-  transition: var(--transition);
-}
-.btn-pagination:hover {
-  transform: scale(1.2);
-}
-/* End pagination table */
+
 
 /* End right corner */
 /*/////////////////////////////////////////////// End Products section */
@@ -903,6 +865,10 @@ td {
   transition: all 0.3s;
   font-size: 24px;
 }
+.btn-hero_slider a {
+  text-decoration: none;
+  color: #000;
+}
 .btn-hero_slider:hover {
   transform: scale(1.2);
 }
@@ -943,4 +909,113 @@ td {
   justify-content: space-between;
   align-items: center;
 }
-/* media  */
+
+/* guides */
+.guides {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.guides_section {
+  padding-bottom: 150px;
+}
+
+/* guides2 */
+.first_row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap:5rem;
+}
+.text_guides2 {
+  font-size: 14px;
+}
+.image_guides2 img {
+  width: 100%;
+}
+
+/* posts section */
+
+.posts_info_section_content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10rem;
+}
+.id_head_posts_info_section {
+  font-size: 24px;
+  font-weight: bold;
+  background-color: var(--main-color);
+  padding: 7px 18px;
+  color: #fff;
+}
+.list_left_firstSection_posts li {
+  margin-bottom: 86px;
+}
+.title_posts_info_section {
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 24px;
+}
+.description_posts_info_section_content {
+  font-size: 18px;
+  margin-left: 74px;
+}
+.image_rightSection_posts {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.image_rightSection_posts img {
+  width: 100%;
+}
+
+/* recomanded more products */
+.recom_main_section {
+  padding-bottom: 150px;
+}
+.recom_section_content {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 5rem;
+}
+.card-reco {
+  box-shadow: var(--box-shadow);
+}
+.imag_container {
+  position: relative;
+}
+.qute_reco {
+  position: absolute;
+  top: -20px;
+  left: -40px;
+  background-color: #fff;
+  padding: 24px;
+  border-radius: 20px;
+}
+/* awarness */
+@media (max-width: 576px) {
+  .guides {
+    grid-template-columns: 1fr;
+  }
+  .header_slider {
+    display: block;
+    text-align: center;
+  }
+  .btn_group {
+    justify-content: center;
+    margin-top: 12px;
+  }
+  .awarness_sections {
+    padding: 0 24px;
+  }
+  .posts_info_section_content {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .description_posts_info_section_content {
+    margin: 0;
+  }
+  .recom_section_content {
+    grid-template-columns: 1fr;
+  }
+}
