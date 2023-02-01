@@ -102,6 +102,9 @@
   .swiper-button-prev:after {
     display: none;
   }
+  .slide-content {
+    margin: 0;
+  }
   /* End News section */
 
   /* Start sucss section */
@@ -399,7 +402,4 @@
   }
 
   /* End products section */
-
-
 }
-
