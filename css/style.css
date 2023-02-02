@@ -992,6 +992,15 @@ td {
   border-radius: 20px;
 }
 /* awarness */
+
+/* Complainant Facility Data */
+.second_title_complaint {
+  font-weight: 600;
+  font-size: 32px;
+  color: var(--main-color);
+}
+/* Complainant Facility Data */
+
 @media (max-width: 576px) {
   .guides {
     grid-template-columns: 1fr;
@@ -1023,4 +1032,63 @@ td {
   .footer_card-reco button {
     margin-bottom: 24px;
   }
+  .first_row {
+    grid-template-columns: 1fr;
+  }
+  .image_guides2 {
+    grid-column: 1/-1;
+  }
+}
+/* News event products */
+
+.title_head_NewsEvent {
+  font-size: 48px;
+  font-weight: bold;
+}
+.filter_word {
+  font-size: 18px;
+}
+.filter_word a {
+  text-decoration: none;
+}
+.filter_word a:first-of-type {
+  background-color: #cccccc;
+  color: #1a1a1a;
+  padding: 4px 14px;
+}
+.filter_word a:nth-child(3) {
+  background-color: #044477;
+  padding: 4px 14px;
+  color: #fff;
+}
+
+.filter_word a:nth-child(4) {
+  background-color: var(--main-color);
+  padding: 4px 12px;
+  color: #fff;
+}
+
+/* body news products */
+.container_products_section {
+  margin-bottom: 64px;
+}
+.news_products_section {
+  margin-top: 64px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4rem;
+}
+
+/* News event products  card*/
+
+.title_card_news_products {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 24px 0 14px;
+}
+.description_card_news_products {
+  font-size: 16px;
+}
+.carousel_news_products {
+  height: 60vh;
 }

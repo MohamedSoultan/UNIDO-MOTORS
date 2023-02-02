@@ -46,10 +46,19 @@ var awarness_reco = new Splide(".awarness_reco", {
       perPage: 1,
     },
     1350: {
-      perPage: 3,
+      perPage: 2,
     },
   },
 });
 
 awarness_reco.mount();
 // end awarness
+
+// new products 3
+
+  $(".news_product3").slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 3
+  });
+
