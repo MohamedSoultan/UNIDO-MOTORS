@@ -97,8 +97,11 @@ html {
   transition: var(--transition);
 }
 .secondary-btn:hover {
-  transform: scale(1.2);
+  transform: scale(1.2) translateX(10px);
   color: var(--main-color);
+}
+.secondary-btn:hover svg path {
+  stroke: var(--main-color);
 }
 .secondary-btn:hover a {
   color: var(--main-color);
@@ -180,7 +183,6 @@ html {
 }
 /* End starter-sections */
 
-
 /* Start pagination table */
 .pagination-container {
   display: flex;
@@ -224,3 +226,6 @@ html {
   transform: scale(1.2);
 }
 /* End pagination table */
+.splide__track {
+  padding-bottom: 50px;
+}
