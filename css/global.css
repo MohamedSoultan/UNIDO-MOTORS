@@ -44,7 +44,9 @@ html {
   top: -285px;
   left: -200px;
 }
-
+.splide__track {
+  padding-bottom: 50px;
+}
 /* Golbal Role */
 
 /* Start primary button */
@@ -100,9 +102,9 @@ html {
   transform: scale(1.2) translateX(10px);
   color: var(--main-color);
 }
-.secondary-btn:hover svg path {
-  stroke: var(--main-color);
-}
+/* .secondary-btn:hover svg:hover {
+  fill: var(--main-color);
+} */
 .secondary-btn:hover a {
   color: var(--main-color);
 }
@@ -183,7 +185,7 @@ html {
 }
 /* End starter-sections */
 
-/* Start pagination table */
+/* Start pagination  */
 .pagination-container {
   display: flex;
   align-items: center;
@@ -225,7 +227,24 @@ html {
 .btn-pagination:hover {
   transform: scale(1.2);
 }
-/* End pagination table */
-.splide__track {
-  padding-bottom: 50px;
+/* End pagination  */
+
+/* Start Primary header user profile */
+.primary_header_userProfiles {
+  background-color: var(--main-hover);
+  background-image: url(../images/in_profile_images/bg_header_user_profile.png);
+  height: 15vh;
+  font-size: 18px;
 }
+.backToWebsite {
+  font-size: 24px;
+}
+.logoText {
+  font-size: 47px;
+  font-weight: 900;
+  line-height: 1;
+}
+.hereText{
+  font-size: 20px;
+}
+/* End Primary header user profile */
