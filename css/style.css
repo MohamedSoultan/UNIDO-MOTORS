@@ -1356,6 +1356,7 @@ td {
 ::-webkit-file-upload-button {
 }
 /* end user3 section */
+/* UPLOAD BTN */
 .label_upload_btn {
   width: 30%;
   font-size: 18px !important;
@@ -1363,7 +1364,7 @@ td {
 .label_aboveInput {
   font-size: 18px;
 }
-.form_btn_upload {
+.upload_button {
   position: relative;
 }
 .text_size_btn {
@@ -1374,9 +1375,171 @@ td {
   font-size: 18px;
   font-style: italic;
 }
+/* UPLOAD BTN */
+.form_left_user3,
+.form_right_user3 {
+  padding: 0 !important;
+}
+.inputDiv_user3 {
+  margin-top: 32px;
+  font-size: 18px;
+  margin-right: 32px;
+}
+.inputDiv_user3 label {
+  width: 100%;
+}
+.inputDiv_user3 input {
+  width: 100%;
+  border: none;
+  background-color: #e6e6e6;
+  padding: 14px 32px;
+}
+.inputDiv_user3 select {
+  width: 100%;
+  border: none;
+  background-color: #e6e6e6;
+  padding: 14px 32px;
+}
+.forms_user3 {
+  margin: 64px 0 !important;
+}
+.additionalServices_user3 {
+  position: relative;
+  padding: 32px 24px;
+  border: 1px solid var(--main-color);
+}
+.title_additionalServices {
+  position: absolute;
+  top: -22px;
+  background-color: #fff;
+  font-weight: bold;
+  font-size: 32px;
+  width: 310px !important;
+}
+.formCheck_user3 {
+  font-size: 18px;
+  border: 1px solid #cccccc;
+  padding: 14px 0px;
+  margin: 10px;
+}
+.formCheck_user3 .form-check-input {
+  font-size: 28px;
+}
+.form-check-input:checked {
+  background-color: var(--main-color) !important;
+  border: none !important;
+}
+.inputDiv_user3_tow {
+  margin-bottom: 30px;
+}
+.price {
+  font-weight: bold;
+  color: var(--main-color);
+}
+.payment_calc_roducts_user3 {
+  position: relative;
+  margin-top: 48px !important;
+  border: 1px solid #cccccc;
+  font-size: 18px;
+  padding: 32px 24px 18px;
+}
+.title_payment_calc_roducts_user3 {
+  width: 200px !important;
+}
+.count_products_user3 {
+  display: inline-block;
+  background-color: var(--main-color);
+  border-radius: 50%;
+  text-align: center;
+  width: 40px !important;
+  color: #fff;
+  font-size: 24px;
+  padding: 5px;
+}
+.payment_calc_roducts_user3 .name_product {
+  font-weight: bold;
+}
+.feesSusception,
+.datExamination,
+.name_product,
+.total_payment_calc_roducts_user3 {
+  padding: 0 !important;
+}
+.total_payment_calc_roducts_user3 {
+  color: var(--main-color);
+}
+/* buttons group */
+.btn_addProduct_user3 {
+  border: none;
+  background-color: var(--second-color);
+  padding: 10px 32px;
+  font-size: 24px;
+}
+.buttons_user3 {
+  position: absolute;
+  right: -104%;
+  bottom: 0;
+}
 /* start user4 section */
-
+.btn_remove_product_user4 {
+  background-color: #f0282b;
+  text-align: center;
+  justify-content: center;
+  padding: 12px 0;
+  border: none;
+  cursor: pointer;
+}
+.primary_header_userProfiles_heade_user_newSupplierRegistration1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/in_profile_images/bg-New\ Supplier\ Registration2.png);
+}
+.right_header_user6_newSupplierRegistration1 {
+  position: absolute;
+  right: 302px;
+  top: 0;
+}
+.header_logo_user6_heade_user_newSupplierRegistration1 {
+  background-color: #fff;
+  padding: 48px 14px 24px;
+  color: var(--main-color);
+}
+.logo_newSupplierRegistration1 {
+  background-color: #fff;
+  padding: 26px 14px 24px;
+}
+.logoText_newSupplierRegistration1 {
+  font-size: 29px;
+}
+.hereText_newSupplierRegistration1 {
+  font-size: 16px;
+}
 /* end user4 section */
+/* Thanks  */
+.thanks_container {
+  height: 80vh;
+}
+.description_thanks {
+  margin: 48px auto;
+  font-size: 18px;
+  width: 70%;
+}
+.title_thanks {
+  font-size: 60px;
+  font-weight: 900;
+}
+/* Thanks  */
+/* terms and condtions */
+.bg-terms {
+  background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/bg-terms.png);
+}
+.title_term{
+  font-size: 25px;
+  font-weight: bold;
+}
+.term_description {
+  font-size: 18px;
+}
+/* terms and condtions */
 @media (max-width: 576px) {
   .guides {
     grid-template-columns: 1fr;
