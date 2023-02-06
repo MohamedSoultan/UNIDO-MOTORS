@@ -1309,6 +1309,74 @@ td {
   display: grid;
   place-content: center;
 }
+
+/* End products section */
+/* user6 section */
+/* Start user2 section */
+.user_profile2_container {
+  margin: 64px 0 150px;
+}
+.title_user_profile2_container {
+  font-size: 48px;
+  font-weight: bold;
+}
+.head_content_uesr {
+  margin-top: 48px;
+}
+.head_content_uesr h5 {
+  font-size: 32px;
+  color: var(--main-color);
+  font-weight: bold;
+}
+.body_user2 {
+  margin-top: 86px;
+}
+.body_user2 li {
+  font-size: 18px;
+  line-height: 2.5;
+  letter-spacing: 0.5px;
+}
+.btn_download_user2 {
+  margin-top: 32px;
+  border: none;
+  background-color: #808080;
+  padding: 14px 32px;
+}
+.btn_download_user2 a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #fff;
+}
+
+.next_btn_user2 {
+  margin-top: 64px;
+}
+/* end user2 section */
+/* start user3 section */
+::-webkit-file-upload-button {
+}
+/* end user3 section */
+.label_upload_btn {
+  width: 30%;
+  font-size: 18px !important;
+}
+.label_aboveInput {
+  font-size: 18px;
+}
+.form_btn_upload {
+  position: relative;
+}
+.text_size_btn {
+  position: absolute;
+  left: 215px;
+  top: 55%;
+  color: #9f9f9f;
+  font-size: 18px;
+  font-style: italic;
+}
+/* start user4 section */
+
+/* end user4 section */
 @media (max-width: 576px) {
   .guides {
     grid-template-columns: 1fr;
