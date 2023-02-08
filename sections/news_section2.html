@@ -10,11 +10,10 @@
     <!-- Start Bootstrap library files for css-->
     <link rel="stylesheet" href="../css/bootstrap.min.css" />
     <link rel="stylesheet" href="../css/bootstrap.min.css.map" />
+
     <link
       rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
     />
 
     <!-- End Bootstrap library files  for css-->
@@ -46,6 +45,39 @@
         <a class="news_products_section_a" href="#"> News</a>
       </div>
     </nav>
+    <section class="slider_news_first container mt-5">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators d-flex gap-5">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <img src="../images/motor-p-News.png" alt="Los Angeles" />
+          </div>
+
+          <div class="item">
+            <img src="../images/motor-p-News.png" alt="Chicago" />
+          </div>
+
+          <div class="item">
+            <img src="../images/motor-p-News.png" alt="New York" />
+          </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+      </div>
+    </section>
     <section class="news_section_news container">
       <div class="document_section_news2">
         <h5 class="title_document_section">Lorem ipsum dolor sit amet</h5>
@@ -165,6 +197,8 @@
         </div>
       </section>
     </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="../js/bootstrap.bundle.min.js"></script>
     <script src="../js/bootstrap.bundle.min.js.map"></script>
     <script src="../js/script.js"></script>

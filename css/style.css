@@ -1530,9 +1530,10 @@ td {
 /* Thanks  */
 /* terms and condtions */
 .bg-terms {
-  background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/bg-terms.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/bg-terms.png);
 }
-.title_term{
+.title_term {
   font-size: 25px;
   font-weight: bold;
 }
@@ -1540,6 +1541,54 @@ td {
   font-size: 18px;
 }
 /* terms and condtions */
+/* Complaint */
+.containerComplaint {
+  border-bottom: 1px solid #cccccc;
+  padding-bottom: 64px;
+}
+.primary_header_complaint {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/bg-Complaint.png);
+  background-size: cover;
+}
+.textarea_container textarea {
+  width: 100%;
+  padding: 24px;
+  height: 350px;
+  border: none;
+  background-color: #e6e6e6;
+}
+.countText {
+  margin-right: 32px;
+  color: #9f9f9f;
+  font-size: 18px;
+}
+.btn_submitComplaint {
+  margin-right: 32px;
+}
+
+.footerComplaint {
+  margin-bottom: 100px;
+}
+.below_textComplaint {
+  font-size: 24px;
+  font-weight: bold;
+}
+.btn_belowComplaint {
+  margin-top: 48px;
+  text-transform: uppercase;
+}
+/* Complaint */
+/* Complaint1 */
+.numbers_nationalID {
+  display: flex;
+  gap: 3px;
+}
+.national_id input {
+  padding: 14px 0;
+  text-align: center;
+}
+/* Complaint1 */
 @media (max-width: 576px) {
   .guides {
     grid-template-columns: 1fr;
