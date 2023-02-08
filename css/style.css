@@ -1353,9 +1353,6 @@ td {
 }
 /* end user2 section */
 /* start user3 section */
-::-webkit-file-upload-button {
-}
-/* end user3 section */
 /* UPLOAD BTN */
 .label_upload_btn {
   width: 30%;
@@ -1480,6 +1477,7 @@ td {
   right: -104%;
   bottom: 0;
 }
+/* end user3 section */
 /* start user4 section */
 .btn_remove_product_user4 {
   background-color: #f0282b;
@@ -1589,6 +1587,57 @@ td {
   text-align: center;
 }
 /* Complaint1 */
+/* Visa section */
+.visaContainer {
+  margin-bottom: 150px;
+}
+.payment_calc_roducts_visa {
+  margin: 0 !important;
+  font-size: 24px;
+  border: 1px solid #cccccc;
+}
+.total_payment_calc_roducts_visa {
+  padding: 0 32px !important ;
+}
+.titleVisa {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 48px;
+}
+.title_chooseVisa {
+  font-size: 18px;
+}
+.inputDiv {
+  margin-top: 32px;
+  font-size: 18px;
+}
+.inputDiv input {
+  width: 100%;
+  border: none;
+  background-color: #e6e6e6;
+  padding: 14px 32px;
+}
+.inputDiv select {
+  border: none;
+  background-color: #e6e6e6;
+  padding: 14px 32px;
+  text-align: left;
+}
+.selectData {
+  font-size: 18px;
+}
+.CVVvisa input {
+  width: 7%;
+  padding: 14px 0;
+  text-align: center;
+}
+.btn_visa button {
+  padding: 8px 64px;
+}
+.total_payment_calc_roducts_visa {
+  background-color: #808080;
+}
+/* Visa section */
 @media (max-width: 576px) {
   .guides {
     grid-template-columns: 1fr;
