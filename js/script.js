@@ -1,5 +1,5 @@
-
 "use strict";
+
 // burger icon
 let menuIcon = document.querySelector(".menu-icon");
 let navContainer = document.querySelector(".nav-container");

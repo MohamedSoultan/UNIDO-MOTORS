@@ -403,3 +403,47 @@
 
   /* End products section */
 }
+
+@media (max-width: 576px) {
+  .guides {
+    grid-template-columns: 1fr;
+  }
+  .header_slider {
+    display: block;
+    text-align: center;
+  }
+  .btn_group {
+    justify-content: center;
+    margin-top: 12px;
+  }
+  .awarness_sections {
+    padding: 0 24px;
+  }
+  .posts_info_section_content {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .description_posts_info_section_content {
+    margin: 0;
+  }
+  .recom_section_content {
+    grid-template-columns: 1fr;
+  }
+  .footer_card-reco {
+    display: block;
+  }
+  .footer_card-reco button {
+    margin-bottom: 24px;
+  }
+  .first_row {
+    grid-template-columns: 1fr;
+  }
+  .image_guides2 {
+    grid-column: 1/-1;
+  }
+
+  .wrapperBox {
+    display: block !important;
+    justify-content: center;
+  }
+}

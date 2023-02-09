@@ -35,53 +35,54 @@
       <div
         class="head_content_uesr d-flex justify-content-between align-items-center"
       >
-        <h5>Complaining company Data:</h5>
-        <img src="../images/in_profile_images/progressSteps2of2.png" alt="" />
+        <h5>Complainant Facility Data:</h5>
+        <img src="../images/in_profile_images/progressSteps1of2.png" alt="" />
       </div>
     </div>
 
     <form class="containerComplaint row container mx-auto">
       <div class="col-6">
         <div class="inputDiv_user3">
-          <!-- select-->
-          <label class="d-block mb-3" for="select1">Company Name*</label>
-          <select name="" id="select1">
-            <option value="1">Company Name</option>
-            <option value="1">motor</option>
-            <option value="2">AC</option>
-            <option value="3">Voltage</option>
-          </select>
+          <label class="d-block mb-3" for="Motor Brand*">Motor Brand*</label>
+          <input type="text" placeholder="Motor Brand*" id="Motor Brand" />
         </div>
+        <div class="inputDiv_user3 national_id">
+          <label class="d-block mb-3" for="Motor Brand*"
+            >National ID Number*</label
+          >
+          <div class="numbers_nationalID">
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+          </div>
+        </div>
+        <!-- national id here -->
         <div class="inputDiv_user3">
           <label class="d-block mb-3" for="Motor Brand*">Motor Brand*</label>
           <input type="text" placeholder="Motor Brand*" id="Motor Brand" />
         </div>
-        <div class="upload_button mt-3">
-          <label for="fileUpload" class="label_aboveInput d-block mb-3"
-            >Contract pdf copy*</label
-          >
-          <label
-            for="fileUpload"
-            class="label_upload_btn btn btn-none px-5 py-4 border-secondary rounded-0 d-flex align-items-center gap-2"
-          >
-            <img
-              src="../images/in_profile_images/Icon feather-upload.png"
-              alt=""
-            />
-            UPLOAD FILE</label
-          >
-          <input type="file" id="fileUpload" style="display: none" /><span
-            class="text_size_btn"
-            >10 mb max file size</span
-          >
+        <div class="inputDiv_user3">
+          <label class="d-block mb-3" for="Email">Email*</label>
+          <input type="text" placeholder="Email" id="Email" />
         </div>
       </div>
       <div class="col-6">
         <div class="inputDiv_user3">
-          <label class="d-block mb-3" for="Motor Model">Motor Model*</label>
-          <input type="text" placeholder="Motor Model" id="Motor Model" />
+          <label class="d-block mb-3" for="Address">Address*</label>
+          <input type="text" placeholder="Address" id="Address" />
         </div>
-        <div class="upload_button mt-3">
+        <div class="upload_button mt-5">
           <label for="fileUpload" class="label_aboveInput d-block mb-3"
             >Motor Data Sheet pdf copy*</label
           >
@@ -100,14 +101,24 @@
             >10 mb max file size</span
           >
         </div>
-        <div class="inputDiv_user3 textarea_container mt-4">
-          <label class="d-block mb-3" for="textarea_massge">Complaint*</label>
-          <textarea placeholder="Complaint"></textarea>
+        <div class="inputDiv_user3">
+          <label class="d-block mb-3" for="Phone">Phone*</label>
+          <div class="countryNumber d-flex gap-2">
+            <optgroup>
+              <option value="1">
+                <img src="../images/Icon-earth.svg" alt="" />
+              </option>
+            </optgroup>
+
+            <input type="phone" placeholder="0000" id="Phone" />
+          </div>
         </div>
-        <div class="countText d-flex justify-content-end mt-1">0/2000</div>
-        <div class="btn_submitComplaint d-flex justify-content-end mt-5">
-          <button type="submit" class="primary-btn">Submit</button>
-        </div>
+      </div>
+      <div class="btnComplaint1 d-flex justify-content-end">
+        <button class="btn-pagination">
+          <a href="./Complaint2.html">NEXT</a>
+          <img src="../images/arrow-blue.svg" alt="" />
+        </button>
       </div>
     </form>
     <footer class="footerComplaint container mt-5">

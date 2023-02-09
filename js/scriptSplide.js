@@ -37,7 +37,7 @@ var awarness_posts = new Splide(".awarness_posts", {
 });
 awarness_posts.mount();
 
-var awarness_reco = new Splide(".awarness_reco", {
+var awarness_recomand = new Splide(".awarness_reco", {
   type: "loop",
   gap: "2rem",
   perPage: 2,
@@ -51,13 +51,5 @@ var awarness_reco = new Splide(".awarness_reco", {
   },
 });
 
-awarness_reco.mount();
+awarness_recomand.mount();
 // end awarness
-
-// new products 3
-
-$(".news_product3").slick({
-  infinite: true,
-  slidesToShow: 3,
-  slidesToScroll: 3,
-});
